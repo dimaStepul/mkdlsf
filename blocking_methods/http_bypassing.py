@@ -3,11 +3,6 @@ import gzip
 import socket
 
 
-html_file = "result.html"
-txt_file = "result.txt"
-site = "ya.ru"
-
-
 def write_to_file(filename, data):
     with open(filename, "a") as f:
         f.write("%s\n" % data)
@@ -17,7 +12,9 @@ def _decode_bytes(input_bytes):
     return input_bytes.decode(errors="replace")
 
 
-def send_request(host, port, data, fragment_size=0, fragment_count=0):
+def send_request(
+    host, port, data, html_file, txt_file, fragment_size=0, fragment_count=0
+):
     sock = socket.create_connection((host, port), 10)
     if fragment_count:
         sock.setsockopt(socket.IPPROTO_TCP, socket.TCP_NODELAY, True)
@@ -30,10 +27,10 @@ def send_request(host, port, data, fragment_size=0, fragment_count=0):
 
             sock.sendall(data[:fragment_size].encode())
             data = data[fragment_size:]
-            print("dsfsdf", data)
+            print(data)
 
-            write_to_file(html_file, "dsfsdf" + str(data))
-            write_to_file(txt_file, "dsfsdf" + str(data))
+            write_to_file(html_file, str(data))
+            write_to_file(txt_file, str(data))
 
         sock.sendall(data.encode())
         recvdata = sock.recv(8192)
@@ -133,17 +130,18 @@ def configure_request_body(host, urn="/"):
     return requests
 
 
-def test_dpi():
+def test_dpi(site, port, html_file, txt_file):
     results = []
     requests = configure_request_body(site, "/")
     for testname in sorted(requests):
         test = requests[testname]
-        # print(test)
         try:
             result = send_request(
                 site,
-                443,
+                port,
                 test.get("data"),
+                html_file,
+                txt_file,
                 test.get("fragment_size"),
                 test.get("fragment_count"),
             )
@@ -158,16 +156,24 @@ def test_dpi():
     return list(set(results))
 
 
-results = test_dpi()
+def main():
+    html_file = "result.html"
+    txt_file = "result.txt"
+    site = "wintika.com"
+    port = 80
+
+    results = test_dpi(site, port, html_file, txt_file)
+
+    print(results)
+
+    with open(html_file, "a") as f:
+        for item in results:
+            f.write("%s<br>\n" % item)
+
+    with open(txt_file, "a") as f:
+        for item in results:
+            f.write("%s\n" % item)
 
 
-print(results)
-
-
-with open("result.html", "a") as f:
-    for item in results:
-        f.write("%s<br>\n" % item)
-
-with open("result.txt", "a") as f:
-    for item in results:
-        f.write("%s\n" % item)
+if __name__ == "__main__":
+    main()
