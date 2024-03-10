@@ -159,7 +159,7 @@ def test_dpi(site, port, html_file, txt_file):
 def main():
     html_file = "result.html"
     txt_file = "result.txt"
-    site = "wintika.com"
+    site = "lenta.ru"
     port = 80
 
     results = test_dpi(site, port, html_file, txt_file)
