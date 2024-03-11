@@ -1,370 +1,448 @@
-7 КБ данных перед Host
-21 КБ данных перед Host
-табуляция в конце домена
-отсутствие пробела между двоеточием и значением заголовка Host
-значение Host БОЛЬШИМИ БУКВАМИ
-заголовок hoSt вместо Host
-необычный порядок заголовков
-дополнительный пробел после GET
-перенос строки в заголовках в UNIX-стиле
-фрагментирование заголовка, hoSt и отсутствие пробела одновременно
-фрагментирование заголовка
-15 КБ данных перед Host
-заголовок hOSt вместо Host
-HTTP/1.1 200 Ok
-Accept-CH: Sec-CH-UA-Platform-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA, Sec-CH-UA-Full-Version-List, Sec-CH-UA-WoW64, Sec-CH-UA-Arch, Sec-CH-UA-Bitness, Sec-CH-UA-Platform, Sec-CH-UA-Full-Version, Viewport-Width, DPR, Device-Memory, RTT, Downlink, ECT
-Cache-Control: no-cache,no-store,max-age=0,must-revalidate
-Content-Security-Policy: connect-src https://*.strm.yandex.net https://mc.yandex.com https://ya.ru https://mc.yandex.ru https://*.mc.yandex.ru https://adstat.yandex.ru https://mc.admetrica.ru http://yabs.yandex.ru;img-src https://*.verify.yandex.ru https://*.ya.ru https://*.yandex.ru https://ya.ru https://yabs.yandex.by https://yabs.yandex.kz https://yabs.yandex.ru https://yabs.yandex.uz https://yandex.ru 'self' https://yastatic.net data: https://mc.admetrica.ru https://mc.yandex.com https://*.mc.yandex.ru https://adstat.yandex.ru https://mc.yandex.ru https://favicon.yandex.net https://avatars.mds.yandex.net blob:;frame-src https://*.ya.ru https://*.yandex.ru https://ya.ru https://yandex.ru https://mc.yandex.ru https://mc.yandex.md https://*.ya.ru https://*.yandex.ru https://ya.ru https://yandex.ru;style-src 'unsafe-inline' https://yastatic.net;report-uri https://csp.yandex.net/csp?project=morda&from=morda.big.ru&showid=1710509126692312-12420169030651232493-balancer-l7leveler-kubr-yp-sas-257-BAL-9739&h=stable-portal-mordago-14.sas.yp-c.yandex.net&yandexuid=8512324931710509126&&version=2024-03-14-510&adb=0;script-src 'unsafe-inline' https://*.ya.ru https://mc.yandex.com https://yastatic.net https://mc.yandex.ru https://*.mc.yandex.ru https://adstat.yandex.ru https://ya.ru;media-src https://yastatic.net;default-src 'self';font-src https://yastatic.net
-Content-Type: text/html; charset=UTF-8
-Date: Fri, 15 Mar 2024 13:25:26 GMT
-Expires: Fri, 15 Mar 2024 13:25:26 GMT
-Last-Modified: Fri, 15 Mar 2024 13:25:26 GMT
-Link: <https://yastatic.net/react/18.2.0/react-with-dom.min.js>;  rel="preload"; as="script"; crossorigin="anonymous";
-Link: <https://yastatic.net/s3/home-static/_/nova/2561b8ca6e63443254fceafdc825cabb3369ae39b5f4eb31343a3192d85350af.js>;  rel="preload"; as="script"; crossorigin="anonymous";
-NEL: {"report_to": "network-errors", "max_age": 100, "success_fraction": 0.001, "failure_fraction": 0.1}
-P3P: policyref="/w3c/p3p.xml", CP="NON DSP ADM DEV PSD IVDo OUR IND STP PHY PRE NAV UNI"
-Report-To: { "group": "network-errors", "max_age": 100, "endpoints": [{"url": "https://dr.yandex.net/nel", "priority": 1}, {"url": "https://dr2.yandex.net/nel", "priority": 2}]}
-Set-Cookie: yandex_gid=21242; Path=/; Domain=ya.ru; Expires=Sun, 14 Apr 2024 13:25:26 GMT
-Set-Cookie: yandexuid=8512324931710509126; Path=/; Domain=ya.ru; Expires=Sun, 15 Mar 2026 13:25:26 GMT
-Set-Cookie: yp=4294967295.skin.s#1713101126.ygu.1; Path=/; Domain=ya.ru; Expires=Sun, 15 Mar 2026 13:25:26 GMT
-Set-Cookie: is_gdpr=1; Path=/; Domain=.ya.ru; Expires=Sun, 15 Mar 2026 13:25:26 GMT
-Set-Cookie: is_gdpr_b=CL/XRBDY8AEYASgB; Path=/; Domain=.ya.ru; Expires=Sun, 15 Mar 2026 13:25:26 GMT
-Set-Cookie: _yasc=q3Nv/ZCwItUPNgX7JXcbIk9K1A4K0BGvllkGbnGUPad76/pt7aXp0ie1i08JM9daAnGd; domain=.ya.ru; path=/; expires=Mon, 13 Mar 2034 13:25:26 GMT; secure
-Set-Cookie: receive-cookie-deprecation=1; Path=/; Domain=.ya.ru; Expires=Sat, 15 Mar 2025 13:25:26 GMT; SameSite=None; Secure; HttpOnly; Partitioned
-Vary: Cookie,Accept-Language,Accept-Encoding
-X-Content-Type-Options: nosniff
-X-Frame-Options: DENY
-X-Yandex-Req-Id: 1710509126692312-12420169030651232493-balancer-l7leveler-kubr-yp-sas-257-BAL-9739
+-HTTP/1.1 200 OK
+Date: Sat, 16 Mar 2024 18:28:12 GMT
+Server: Apache
+Last-Modified: Tue, 10 May 2022 07:25:00 GMT
+ETag: "4c9-5dea338f26b00"
+Accept-Ranges: bytes
+Content-Length: 1225
+Connection: close
+Content-Type: text/html
 
-<!doctype html><html lang="ru" class="i-ua_js_no i-ua_inlinesvg_yes document_services-suggest_yes"><head xmlns:og="http://ogp.me/ns#"><meta charSet="UTF-8"/><title>Яндекс</title><link rel="apple-touch-icon" href="https://yastatic.net/s3/home-static/_/nova/3c14217d.png" sizes="76x76"/><link rel="apple-touch-icon" href="https://yastatic.net/s3/home-static/_/nova/b839aa04.png" sizes="120x120"/><link rel="apple-touch-icon" href="https://yastatic.net/s3/home-static/_/nova/604dd380.png" sizes="152x152"/><link rel="apple-touch-icon" href="https://yastatic.net/s3/home-static/_/nova/1d994609.png" sizes="180x180"/><link rel="alternate" type="application/rss+xml" title="Новости Яндекса" href="https://yandex.ru/company/press_releases/news.rss"/><link rel="alternate" type="application/rss+xml" title="Блог Яндекса" href="https://yandex.ru/blog/company/rss"/><link rel="search" href="//yandex.ru/opensearch.xml" title="Яндекс" type="application/opensearchdescription+xml"/><link rel="manifest" href="/portal/front/resources/desktop/manifest-ru.json"/><link rel="alternate" href="https://ya.ru/" hrefLang="ru"/><link rel="alternate" href="https://ya.ru/" hrefLang="ru-RU"/><link rel="alternate" href="https://yandex.by/" hrefLang="be"/><link rel="alternate" href="https://yandex.by/" hrefLang="ru-BY"/><link rel="alternate" href="https://yandex.kz/" hrefLang="kk"/><link rel="alternate" href="https://yandex.kz/" hrefLang="ru-KZ"/><link rel="alternate" href="https://yandex.uz/" hrefLang="uz"/><link rel="alternate" href="https://yandex.uz/" hrefLang="ru-UZ"/><link rel="alternate" href="https://yandex.com.tr/" hrefLang="tr"/><link rel="alternate" href="https://yandex.com/" hrefLang="en"/><link rel="alternate" href="https://yandex.com/" hrefLang="x-default"/><link rel="shortcut icon" href="https://yastatic.net/s3/home-static/_/nova/c0bfee03.png" sizes="16x16"/><link rel="shortcut icon" href="https://yastatic.net/s3/home-static/_/nova/49a51322.png" sizes="32x32"/><link rel="shortcut icon" href="https://yastatic.net/s3/home-static/_/nova/d17b570e.png" sizes="192x192"/><meta name="referrer" content="origin"/><meta property="fb:app_id" content="1524984910954255"/><meta property="og:title" content="Яндекс"/><meta property="og:description" content="Найдётся всё"/><meta property="og:url" content="https://ya.ru"/><meta property="og:type" content="website"/><meta property="og:site_name" content="Яндекс"/><meta property="og:locale" content="ru_RU"/><meta property="description" content="Найдётся всё"/><meta property="og:image" content="https://yastatic.net/s3/home-static/_/nova/4821e9d5.png"/><meta property="og:locale:alternate" content="be_BY"/><meta property="og:locale:alternate" content="kk_KZ"/><meta property="og:locale:alternate" content="tt_RU"/><meta property="og:locale:alternate" content="uk_UA"/><meta property="og:locale:alternate" content="en_US"/><meta property="og:locale:alternate" content="uz_UZ"/><meta property="og:locale:alternate" content="en_US"/><script>(function(){(function(r,s){if(r.Ya=r.Ya||{},Ya.Rum)throw new Error("Rum: interface is already defined");var a=r.performance,o=a&&a.timing&&a.timing.navigationStart||Ya.startPageLoad||+new Date,i=r.requestAnimationFrame,e=Ya.Rum={enabled:!!a,vsStart:document.visibilityState,vsChanged:!1,_defTimes:[],_defRes:[],_deltaMarks:{},_markListeners:{},_onComplete:[],_onInit:[],_unsubscribers:[],_settings:{},_vars:{},init:function(t,n){e._settings=t,e._vars=n},getTime:a&&a.now?function(){return a.now()}:Date.now?function(){return Date.now()-o}:function(){return new Date-o},time:function(t){e._deltaMarks[t]=[e.getTime()]},timeEnd:function(t,n){var u=e._deltaMarks,c=u[t];!c||c.length===0||c.push(e.getTime(),n)},sendTimeMark:function(t,n,u,c){n===s&&(n=e.getTime()),e._defTimes.push([t,n,c]),e.mark(t,n)},sendDelta:function(t,n,u,c){var m=e._deltaMarks;if(!m[t]&&typeof n<"u"){var g;c&&c.originalEndTime?g=c.originalEndTime:g=e.getTime(),m[t]=[g-n,g,u]}},sendResTiming:function(t,n){e._defRes.push([t,n])},sendRaf:function(t){var n=e.getSetting("forcePaintTimeSending");if(!(!i||!n&&e.isVisibilityChanged())){var u="2616."+t;i(function(){!n&&e.isVisibilityChanged()||(e.getSetting("sendFirstRaf")&&e.sendTimeMark(u+".205"),i(function(){!n&&e.isVisibilityChanged()||e.sendTimeMark(u+".1928")}))})}},isVisibilityChanged:function(){return e.vsStart&&(e.vsStart!=="visible"||e.vsChanged)},mark:a&&a.mark?function(t,n){a.mark(t+(n?": "+n:""))}:function(){},getSetting:function(t){var n=e._settings[t];return n===null?null:n||""},on:function(t,n){if(typeof n=="function")return(e._markListene
-HTTP/1.1 200 Ok
-Accept-CH: Sec-CH-UA-Platform-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA, Sec-CH-UA-Full-Version-List, Sec-CH-UA-WoW64, Sec-CH-UA-Arch, Sec-CH-UA-Bitness, Sec-CH-UA-Platform, Sec-CH-UA-Full-Version, Viewport-Width, DPR, Device-Memory, RTT, Downlink, ECT
-Cache-Control: no-cache,no-store,max-age=0,must-revalidate
-Content-Security-Policy: connect-src https://*.strm.yandex.net https://mc.yandex.com https://ya.ru https://mc.yandex.ru https://*.mc.yandex.ru https://adstat.yandex.ru https://mc.admetrica.ru http://yabs.yandex.ru;img-src https://*.verify.yandex.ru https://*.ya.ru https://*.yandex.ru https://ya.ru https://yabs.yandex.by https://yabs.yandex.kz https://yabs.yandex.ru https://yabs.yandex.uz https://yandex.ru 'self' https://yastatic.net data: https://mc.admetrica.ru https://mc.yandex.com https://*.mc.yandex.ru https://adstat.yandex.ru https://mc.yandex.ru https://favicon.yandex.net https://avatars.mds.yandex.net blob:;frame-src https://*.ya.ru https://*.yandex.ru https://ya.ru https://yandex.ru https://mc.yandex.ru https://mc.yandex.md https://*.ya.ru https://*.yandex.ru https://ya.ru https://yandex.ru;style-src 'unsafe-inline' https://yastatic.net;report-uri https://csp.yandex.net/csp?project=morda&from=morda.big.ru&showid=1710509127898926-5039384488060849415-balancer-l7leveler-kubr-yp-sas-206-BAL-6119&h=stable-portal-mordago-137.klg.yp-c.yandex.net&yandexuid=8608494151710509127&&version=2024-03-14-510&adb=0;script-src 'unsafe-inline' https://*.ya.ru https://mc.yandex.com https://yastatic.net https://mc.yandex.ru https://*.mc.yandex.ru https://adstat.yandex.ru https://ya.ru;media-src https://yastatic.net;default-src 'self';font-src https://yastatic.net
-Content-Type: text/html; charset=UTF-8
-Date: Fri, 15 Mar 2024 13:25:27 GMT
-Expires: Fri, 15 Mar 2024 13:25:27 GMT
-Last-Modified: Fri, 15 Mar 2024 13:25:27 GMT
-Link: <https://yastatic.net/react/18.2.0/react-with-dom.min.js>;  rel="preload"; as="script"; crossorigin="anonymous";
-Link: <https://yastatic.net/s3/home-static/_/nova/2561b8ca6e63443254fceafdc825cabb3369ae39b5f4eb31343a3192d85350af.js>;  rel="preload"; as="script"; crossorigin="anonymous";
-NEL: {"report_to": "network-errors", "max_age": 100, "success_fraction": 0.001, "failure_fraction": 0.1}
-P3P: policyref="/w3c/p3p.xml", CP="NON DSP ADM DEV PSD IVDo OUR IND STP PHY PRE NAV UNI"
-Report-To: { "group": "network-errors", "max_age": 100, "endpoints": [{"url": "https://dr.yandex.net/nel", "priority": 1}, {"url": "https://dr2.yandex.net/nel", "priority": 2}]}
-Set-Cookie: yandex_gid=21242; Path=/; Domain=ya.ru; Expires=Sun, 14 Apr 2024 13:25:27 GMT
-Set-Cookie: yandexuid=860849415171050912 7; Path=/; Domain=ya.ru; Expires=Sun, 15 Mar 2026 13:25:27 GMT
-Set-Cookie: yp=4294967295.skin.s#1713101127.ygu.1; Path=/; Domain=ya.ru; Expires=Sun, 15 Mar 2026 13:25:27 GMT
-Set-Cookie: is_gdpr=1; Path=/; Domain=.ya.ru; Expires=Sun, 15 Mar 2026 13:25:27 GMT
-Set-Cookie: is_gdpr_b=CL/XRBDY8AEYASgB; Path=/; Domain=.ya.ru; Expires=Sun, 15 Mar 2026 13:25:27 GMT
-Set-Cookie: _yasc=hxx2nOqc1aO00eODlz8A3qLlX4lp3nl98cb1+G+qx5AZpj5j1svrjonTJkO5dmMPeZ0=; domain=.ya.ru; path=/; expires=Mon, 13 Mar 2034 13:25:27 GMT; secure
-Set-Cookie: receive-cookie-deprecation=1; Path=/; Domain=.ya.ru; Expires=Sat, 15 Mar 2025 13:25:27 GMT; SameSite=None; Secure; HttpOnly; Partitioned
-Vary: Cookie,Accept-Language,Accept-Encoding
- zz z
-X-Frame-Options: DENY
-X-Yandex-Req-Id: 1710509127898926-5039384488060849415-balancer-l7leveler-kubr-yp-sas-206-BAL-6119
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Cyta</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />	
+<style>
+body {
+    font-family: Arial, sans-serif;
+    font-size: 22px;
+    background-color: #efefef;
+	 color: #333;
+    background-image: none;
+    height: 100%;
+	line-height: 30px;
+	padding: 80px 0;
+}
+a {
+    color: #357729;
+    text-decoration: underline;
+}
+a:hover {
+    color: #666;
+    text-decoration: underline;
+}
+.table{
+	background-color: #fff;
+	border-radius: 8px;
+	box-shadow: 0 2px 8px 0 rgb(0 0 0 / 16%);
+	padding: 50px;
+	width: 96%;
+	max-width: 850px;
+}	
+</style>
+</head>
 
-<!doctype html><html lang="ru" class="i-ua_js_no i-ua_inlinesvg_yes document_services-suggest_yes"><head xmlns:og="http://ogp.me/ns#"><meta charSet="UTF-8"/><title>Яндекс</title><link rel="apple-touch-icon" href="https://yastatic.net/s3/home-static/_/nova/3c14217d.png" sizes="76x76"/><link rel="apple-touch-icon" href="https://yastatic.net/s3/home-static/_/nova/b839aa04.png" sizes="120x120"/><link rel="apple-touch-icon" href="https://yastatic.net/s3/home-static/_/nova/604dd380.png" sizes="152x152"/><link rel="apple-touch-icon" href="https://yastatic.net/s3/home-static/_/nova/1d994609.png" sizes="180x180"/><link rel="alternate" type="application/rss+xml" title="Новости Яндекса" href="https://yandex.ru/company/press_releases/news.rss"/><link rel="alternate" type="application/rss+xml" title="Блог Яндекса" href="https://yandex.ru/blog/company/rss"/><link rel="search" href="//yandex.ru/opensearch.xml" title="Яндекс" type="application/opensearchdescription+xml"/><link rel="manifest" href="/portal/front/resources/desktop/manifest-ru.json"/><link rel="alternate" href="https://ya.ru/" hrefLang="ru"/><link rel="alternate" href="https://ya.ru/" hrefLang="ru-RU"/><link rel="alternate" href="https://yandex.by/" hrefLang="be"/><link rel="alternate" href="https://yandex.by/" hrefLang="ru-BY"/><link rel="alternate" href="https://yandex.kz/" hrefLang="kk"/><link rel="alternate" href="https://yandex.kz/" hrefLang="ru-KZ"/><link rel="alternate" href="https://yandex.uz/" hrefLang="uz"/><link rel="alternate" href="https://yandex.uz/" hrefLang="ru-UZ"/><link rel="alternate" href="https://yandex.com.tr/" hrefLang="tr"/><link rel="alternate" href="https://yandex.com/" hrefLang="en"/><link rel="alternate" href="https://yandex.com/" hrefLang="x-default"/><link rel="shortcut icon" href="https://yastatic.net/s3/home-static/_/nova/c0bfee03.png" sizes="16x16"/><link rel="shortcut icon" href="https://yastatic.net/s3/home-static/_/nova/49a51322.png" sizes="32x32"/><link rel="shortcut icon" href="https://yastatic.net/s3/home-static/_/nova/d17b570e.png" sizes="192x192"/><meta name="referrer" content="origin"/><meta property="fb:app_id" content="1524984910954255"/><meta property="og:title" content="Яндекс"/><meta property="og:description" content="Найдётся всё"/><meta property="og:url" content="https://ya.ru"/><meta property="og:type" content="website"/><meta property="og:site_name" content="Яндекс"/><meta property="og
-HTTP/1.1 200 Ok
-Accept-CH: Sec-CH-UA-Platform-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA, Sec-CH-UA-Full-Version-List, Sec-CH-UA-WoW64, Sec-CH-UA-Arch, Sec-CH-UA-Bitness, Sec-CH-UA-Platform, Sec-CH-UA-Full-Version, Viewport-Width, DPR, Device-Memory, RTT, Downlink, ECT
-Cache-Control: no-cache,no-store,max-age=0,must-revalidate
-Content-Security-Policy: script-src 'unsafe-inline' https://*.ya.ru https://mc.yandex.com https://yastatic.net https://mc.yandex.ru https://*.mc.yandex.ru https://adstat.yandex.ru https://ya.ru;media-src https://yastatic.net;connect-src https://*.strm.yandex.net https://mc.yandex.com https://ya.ru https://mc.yandex.ru https://*.mc.yandex.ru https://adstat.yandex.ru https://mc.admetrica.ru http://yabs.yandex.ru;img-src https://*.verify.yandex.ru https://*.ya.ru https://*.yandex.ru https://ya.ru https://yabs.yandex.by https://yabs.yandex.kz https://yabs.yandex.ru https://yabs.yandex.uz https://yandex.ru 'self' https://yastatic.net data: https://mc.admetrica.ru https://mc.yandex.com https://*.mc.yandex.ru https://adstat.yandex.ru https://mc.yandex.ru https://favicon.yandex.net https://avatars.mds.yandex.net blob:;frame-src https://*.ya.ru https://*.yandex.ru https://ya.ru https://yandex.ru https://mc.yandex.ru https://mc.yandex.md https://*.ya.ru https://*.yandex.ru https://ya.ru https://yandex.ru;style-src 'unsafe-inline' https://yastatic.net;report-uri https://csp.yandex.net/csp?project=morda&from=morda.big.ru&showid=1710509128878349-11875890606096960368-balancer-l7leveler-kubr-yp-sas-133-BAL-8853&h=stable-portal-mordago-69.klg.yp-c.yandex.net&yandexuid=7969603681710509128&&version=2024-03-14-510&adb=0;default-src 'self';font-src https://yastatic.net
-Content-Type: text/html; charset=UTF-8
-Date: Fri, 15 Mar 2024 13:25:28 GMT
-Expires: Fri, 15 Mar 2024 13:25:28 GMT
-Last-Modified: Fri, 15 Mar 2024 13:25:28 GMT
-Link: <https://yastatic.net/react/18.2.0/react-with-dom.min.js>;  rel="preload"; as="script"; crossorigin="anonymous";
-Link: <https://yastatic.net/s3/home-static/_/nova/2561b8ca6e63443254fceafdc825cabb3369ae39b5f4eb31343a3192d85350af.js>;  rel="preload"; as="script"; crossorigin="anonymous";
-NEL: {"report_to": "network-errors", "max_age": 100, "success_fraction": 0.001, "failure_fraction": 0.1}
-P3P: policyref="/w3c/p3p.xml", CP="NON DSP ADM DEV PSD IVDo OUR IND STP PHY PRE NAV UNI"
-Report-To: { "group": "network-errors", "max_a
-HTTP/1.1 200 Ok
-Accept-CH: Sec-CH-UA-Platform-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA, Sec-CH-UA-Full-Version-List, Sec-CH-UA-WoW64, Sec-CH-UA-Arch, Sec-CH-UA-Bitness, Sec-CH-UA-Platform, Sec-CH-UA-Full-Version, Viewport-Width, DPR, Device-Memory, RTT, Downlink, ECT
-Cache-Control: no-cache,no-store,max-age=0,must-revalidate
-Content-Security-Policy: script-src 'unsafe-inline' https://*.ya.ru https://mc.yandex.com https://yastatic.net https://mc.yandex.ru https://*.mc.yandex.ru https://adstat.yandex.ru https://ya.ru;media-src https://yastatic.net;connect-src https://*.strm.yandex.net https://mc.yandex.com https://ya.ru https://mc.yandex.ru https://*.mc.yandex.ru https://adstat.yandex.ru https://mc.admetrica.ru http://yabs.yandex.ru;img-src https://*.verify.yandex.ru https://*.ya.ru https://*.yandex.ru https://ya.ru https://yabs.yandex.by https://yabs.yandex.kz https://yabs.yandex.ru https://yabs.yandex.uz https://yandex.ru 'self' https://yastatic.net data: https://mc.admetrica.ru https://mc.yandex.com https://*.mc.yandex.ru https://adstat.yandex.ru https://mc.yandex.ru https://favicon.yandex.net https://avatars.mds.yandex.net blob:;frame-src https://*.ya.ru https://*.yandex.ru https://ya.ru https://yandex.ru https://mc.yandex.ru https://mc.yandex.md https://*.ya.ru https://*.yandex.ru https://ya.ru https://yandex.ru;style-src 'unsafe-inline' https://yastatic.net;report-uri https://csp.yandex.net/csp?project=morda&from=morda.big.ru&showid=1710509129862050-9555905090408041874-balancer-l7leveler-kubr-yp-sas-14-BAL-7795&h=stable-portal-mordago-158.klg.yp-c.yandex.net&yandexuid=7080418741710509129&&version=2024-03-14-510&adb=0;default-src 'self';font-src https://yastatic.net
-Content-Type: text/html; charset=UTF-8
-Date: Fri, 15 Mar 2024 13:25:29 GMT
-Expires: Fri, 15 Mar 2024 13:25:29 GMT
-Last-Modified: Fri, 15 Mar 2024 13:25:29 GMT
-Link: <https://yastatic.net/react/18.2.0/react-with-dom.min.js>;  rel="preload"; as="script"; crossorigin="anonymous";
-Link: <https://yastatic.net/s3/home-static/_/nova/2561b8ca6e63443254fceafdc825cabb3369ae39b5f4eb31343a3192d85350af.js>;  rel="preload"; as="script"; crossorigin="anonymous";
-NEL: {"report_to": "network-errors", "max_age": 100, "success_fraction": 0.001, "failure_fraction": 0.1}
-P3P: policyref="/w3c/p3p.xml", CP="NON DSP ADM DEV PSD IVDo OUR IND STP PHY PRE NAV UNI"
-Report-To: { "group": "network-errors", "max_age": 100, "endpoints": [{"url": "https://dr.yandex.net/nel", "priority": 1}, {"url": "https://dr2.yandex.net/nel", "priority": 2}]}
-Set-Cookie: yandex_gid=21242; Path=/; Domain=ya.ru; Expires=Sun, 14 Apr 2024 13:25:29 GMT
-Set-Cookie: yandexuid=7080418741710509129; Path=/; Domain=ya.ru; Expires=Sun, 15 Mar 2026 13:25:29 GMT
-Set-Cookie: yp=4294967295.skin.s#1713101129.ygu.1; Path=/; Domain=ya.ru; Expires=Sun, 15 Mar 2026 13:25:29 GMT
-Set-Cookie: is_gdpr=1; Path=/; Domain=.ya.ru; Expires=Sun, 15 Mar 2026 13:25:29 GMT
-Set-Cookie: is_gdpr_b=CL/XRBDY8AEYASgB; Path=/; Domain=.ya.ru; Expires=Sun, 15 Mar 2026 13:25:29 GMT
-Set-Cookie: _yasc=waNEJzs6NfZmyWeq6umVhakmnTmaFS+DDIOLWuHXZiTnLI2c8cvjtwiN2h10XOQMVj8H; domain=.ya.ru; path=/; expires=Mon, 13 Mar 2034 13:25:29 GMT; secure
-Set-Cookie: receive-cookie-deprecation=1; Path=/; Domain=.ya.ru; Expires=Sat, 15 Mar 2025 13:25:29 GMT; SameSite=None; Secure; HttpOnly; Partitioned
-Vary: Cookie,Accept-Language,Accept-Encoding
-X-Content-Type-Options: nosniff
-X-Frame-Options: DENY
-X-Yandex-Req-Id: 1710509129862050-9555905090408041874-balancer-l7leveler-kubr-yp-sas-14-BAL-7795
+<body>
 
-<!doctype html><html lang="ru" class="i-ua_js_no i-ua_inlinesvg_yes document_services-suggest_yes"><head xmlns:og="http://ogp.me/ns#"><meta charSet="UTF-8"/><title>Яндекс</title><link rel="apple-touch-icon" href="https://yastatic.net/s3/home-static/_/nova/3c14217d.png" sizes="76x76"/><link rel="apple-touch-icon" href="https://yastatic.net/s3/home-static/_/nova/b839aa04.png" sizes="120x120"/><link rel="apple-touch-icon" href="https://yastatic.net/s3/home-static/_/nova/604dd380.png" sizes="152x152"/><link rel="apple-touch-icon" href="https://yastatic.net/s3/home-static/_/nova/1d994609.png" sizes="180x180"/><link rel="alternate" type="application/rss+xml" title="Новости Яндекса" href="https://yandex.ru/company/press_releases/news.rss"/><link rel="alternate" type="application/rss+xml" title="Блог Яндекса" href="https://yandex.ru/blog/company/rss"/><link rel="search" href="//yandex.ru/opensearch.xml" title="Яндекс" type="application/opensearchdescription+xml"/><link rel="manifest" href="/portal/front/resources/desktop/manifest-ru.json"/><link rel="alternate" href="https://ya.ru/" hrefLang="ru"/><link rel="alternate" href="https://ya.ru/" hrefLang="ru-RU"/><link rel="alternate" href="https://yandex.by/" hrefLang="be"/><link rel="alternate" href="https://yandex.by/" hrefLang="ru-BY"/><link rel="alternate" href="https://yandex.kz/" hrefLang="kk"/><link rel="alternate" href="https://yandex.kz/" hrefLang="ru-KZ"/><link rel="alternate" href="https://yandex.uz/" hrefLang="uz"/><link rel="alternate" href="https://yandex.uz/" hrefLang="ru-UZ"/><link rel="alternate" href="https://yandex.com.tr/" hrefLang="tr"/><link rel="alternate" href="https://yandex.com/" hrefLang="en"/><link rel="alternate" href="https://yandex.com/" hrefLang="x-default"/><link rel="shortcut icon" href="https://yastatic.net/s3/home-static/_/nova/c0bfee03.png" sizes="16x16"/><link rel="shortcut icon" href="https://yastatic.net/s3/home-static/_/nova/49a51322.png" sizes="32x32"/><link rel="shortcut icon" href="https://yastatic.net/s3/home-static/_/nova/d17b570e.png" sizes="192x192"/><meta name="referrer" content="origin"/><meta property="fb:app_id" content="1524984910954255"/><meta property="og:title" content="Яндекс"/><meta property="og:description" content="Найдётся всё"/><meta property="og:url" content="https://ya.ru"/><meta property="og:type" content="website"/><meta property="og:site_name" content="Яндекс"/><meta property="og:locale" content="ru_RU"/><meta property="description" content="Найдётся всё"/><meta property="og:image" content="https://yastatic.net/s3/home-static/_/nova/4821e9d5.png"/><meta property="og:locale:alternate" content="be_BY"/><meta property="og:locale:alternate" content="kk_KZ"/><meta property="og:locale:alternate" content="tt_RU"/><meta property="og:locale:alternate" content="uk_UA"/><meta property="og:locale:alternate" content="en_US"/><meta property="og:locale:alternate" content="uz_UZ"/><meta property="og:locale:alternate" content="en_US"/><script>(function(){(function(r,s){if(r.Ya=r.Ya||{},Ya.Rum)throw new Error("Rum: interface is already defined");var a=r.performance,o=a&&a.timing&&a.timing.navigationStart||Ya.startPageLoad||+new Date,i=r.requestAnimationFrame,e=Ya.Rum={enabled:!!a,vsStart:document.visibilityState,vsChanged:!1,_defTimes:[],_defRes:[],_deltaMarks:{},_markListeners:{},_onComplete:[],_onInit:[],_unsubscribers:[],_settings:{},_vars:{},init:function(t,n){e._settings=t,e._vars=n},getTime:a&&a.now?function(){return a.now()}:Date.now?function(){return Date.now()-o}:function(){return new Date-o},time:function(t){e._deltaMarks[t]=[e.getTime()]},timeEnd:function(t,n){var u=e._deltaMarks,c=u[t];!c||c.length===0||c.push(e.getTime(),n)},sendTimeMark:function(t,n,u,c){n===s&&(n=e.getTime()),e._defTimes.push([t,n,c]),e.mark(t,n)},sendDelta:function(t,n,u,c){var m=e._deltaMarks;if(!m[t]&&typeof n<"u"){var g;c&&c.originalEndTime?g=c.originalEndTime:g=e.getTime(),m[t]=[g-n,g,u]}},sendResTiming:function(t,n){e._defRes.push([t,n])},sendRaf:function(t){var n=e.getSetting("forcePaintTimeSending");if(!(!i||!n&&e.isVisibilityChanged())){var u="2616."+t;i(function(){!n&&e.isVisibilityChanged()||(e.getSetting("sendFirstRaf")&&e.sendTimeMark(u+".205"),i(function(){!n&&e.isVisibilityChanged()||e.sendTimeMark(u+".1928")}))})}},isVisibilityChanged:function(){return e.vsStart&&(e.vsStart!=="visible"||e.vsChanged)},mark:a&&a.mark?function(t,n){a.mark(t+(n?": "+n:""))}:function(){},getSetting:function(t){var n=e._settings[t];return n===null?null:n||""},on:function(t,n){if(typeof n=="function")return(e._markListeners[
-HTTP/1.1 200 Ok
-Accept-CH: Sec-CH-UA-Platform-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA, Sec-CH-UA-Full-Version-List, Sec-CH-UA-WoW64, Sec-CH-UA-Arch, Sec-CH-UA-Bitness, Sec-CH-UA-Platform, Sec-CH-UA-Full-Version, Viewport-Width, DPR, Device-Memory, RTT, Downlink, ECT
-Cache-Control: no-cache,no-store,max-age=0,must-revalidate
-Content-Security-Policy: script-src 'unsafe-inline' https://*.ya.ru https://mc.yandex.com https://yastatic.net https://mc.yandex.ru https://*.mc.yandex.ru https://adstat.yandex.ru https://ya.ru;media-src https://yastatic.net;connect-src https://*.strm.yandex.net https://mc.yandex.com https://ya.ru https://mc.yandex.ru https://*.mc.yandex.ru https://adstat.yandex.ru https://mc.admetrica.ru http://yabs.yandex.ru;img-src https://*.verify.yandex.ru https://*.ya.ru https://*.yandex.ru https://ya.ru https://yabs.yandex.by https://yabs.yandex.kz https://yabs.yandex.ru https://yabs.yandex.uz https://yandex.ru 'self' https://yastatic.net data: https://mc.admetrica.ru https://mc.yandex.com https://*.mc.yandex.ru https://adstat.yandex.ru https://mc.yandex.ru https://favicon.yandex.net https://avatars.mds.yandex.net blob:;frame-src https://*.ya.ru https://*.yandex.ru https://ya.ru https://yandex.ru https://mc.yandex.ru https://mc.yandex.md https://*.ya.ru https://*.yandex.ru https://ya.ru https://yandex.ru;style-src 'unsafe-inline' https://yastatic.net;report-uri https://csp.yandex.net/csp?project=morda&from=morda.big.ru&showid=1710509130998017-9379921041722614545-balancer-l7leveler-kubr-yp-sas-128-BAL-1971&h=stable-portal-mordago-98.vla.yp-c.yandex.net&yandexuid=8226145451710509130&&version=2024-03-14-510&adb=0;default-src 'self';font-src https://yastatic.net
-Content-Type: text/html; charset=UTF-8
-Date: Fri, 15 Mar 2024 13:25:31 GMT
-Expires: Fri, 15 Mar 2024 13:25:31 GMT
-Last-Modified: Fri, 15 Mar 2024 13:25:31 GMT
-Link: <https://yastatic.net/react/18.2.0/react-with-dom.min.js>;  rel="preload"; as="script"; crossorigin="anonymous";
-Link: <https://yastatic.net/s3/home-static/_/nova/2561b8ca6e63443254fceafdc825cabb3369ae39b5f4eb31343a3192d85350af.js>;  rel="preload"; as="script"; crossorigin="anonymous";
-NEL: {"report_to": "network-errors", "max_age": 100, "success_fraction": 0.001, "failure_fraction": 0.1}
-P3P: policyref="/w3c/p3p.xml", CP="NON DSP ADM DEV PSD IVDo OUR IND STP PHY PRE NAV UNI"
-Report-To: { "group": "network-errors", "max_age": 100, "endpoints": [{"url": "https://dr.yandex.net/nel", "priority": 1}, {"url": "https://dr2.yandex.net/nel", "priority": 2}]}
-Set-Cookie: yandex_gid=21242; Path=/; Domain=ya.ru; Expires=Sun, 14 Apr 2024 13:25:31 GMT
-Set-Cookie: yandexuid=8226145451710509130; Path=/; Domain=ya.ru; Expires=Sun, 15 Mar 2026 13:25:30 GMT
-Set-Cookie: yp=4294967295.skin.s#1713101131.ygu.1; Path=/; Domain=ya.ru; Expires=Sun, 15 Mar 2026 13:25:30 GMT
-Set-Cookie: is_gdpr=1; Path=/; Domain=.ya.ru; Expires=Sun, 15 Mar 2026 13:25:30 GMT
-Set-Cookie: is_gdpr_b=CL/XRBDY8AEYASgB; Path=/; Domain=.ya.ru; Expires=Sun, 15 Mar 2026 13:25:30 GMT
-Set-Cookie: _yasc=cCQnEp+aDohXYoieEDzfDSOIpycs21mWclMLdrudaLh8CZm6od/UDIv5jZCiU/CXLv8=; domain=.ya.ru; path=/; expires=Mon, 13 Mar 2034 13:25:30 GMT; secure
-Set-Cookie: receive-cookie-deprecation=1; Path=/; Domain=.ya.ru; Expires=Sat, 15 Mar 2025 13:25:30 GMT; SameSite=None; Secure; HttpOnly; Partitioned
-Vary: Cookie,Accept-Language,Accept-Encoding
-X-Content-Type-Options: nosniff
-X-Frame-Options: DENY
-X-Yandex-Req-Id: 1710509130998017-9379921041722614545-balancer-l7leveler-kubr-yp-sas-128-BAL-1971
+<p style="text-align: center;"><img src="cyta-logo.png" alt="Cyta"/></p>
+<table class="table" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tbody>
+    <tr>
+      <td align="center"><span style="padding: 40px 0;"><img src="cancel-mid.jpg" width="100" height="100" alt=""/></span><br>
+      <p>This site can’t be reached due tο compliance with the Council Regulation (EU) 350/2022 and with EU and National Laws, only for as long as necessary.</p></td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>
 
-<!doctype html><html lang="ru" class="i-ua_js_no i-ua_inlinesvg_yes document_services-suggest_yes"><head xmlns:og="http://ogp.me/ns#"><meta charSet="UTF-8"/><title>Яндекс</title><link rel="apple-touch-icon" href="https://yastatic.net/s3/home-static/_/nova/3c14217d.png" sizes="76x76"/><link rel="apple-touch-icon" href="https://yastatic.net/s3/home-static/_/nova/b839aa04.png" sizes="120x120"/><link rel="apple-touch-icon" href="https://yastatic.net/s3/home-static/_/nova/604dd380.png" sizes="152x152"/><link rel="apple-touch-icon" href="https://yastatic.net/s3/home-static/_/nova/1d994609.png" sizes="180x180"/><link rel="alternate" type="application/rss+xml" title="Новости Яндекса" href="https://yandex.ru/company/press_releases/news.rss"/><link rel="alternate" type="application/rss+xml" title="Блог Яндекса" href="https://yandex.ru/blog/company/rss"/><link rel="search" href="//yandex.ru/opensearch.xml" title="Яндекс" type="application/opensearchdescription+xml"/><link rel="manifest" href="/portal/front/resources/desktop/manifest-ru.json"/><link rel="alternate" href="https://ya.ru/" hrefLang="ru"/><link rel="alternate" href="https://ya.ru/" hrefLang="ru-RU"/><link rel="alternate" href="https://yandex.by/" hrefLang="be"/><link rel="alternate" href="https://yandex.by/" hrefLang="ru-BY"/><link rel="alternate" href="https://yandex.kz/" hrefLang="kk"/><link rel="alternate" href="https://yandex.kz/" hrefLang="ru-KZ"/><link rel="alternate" href="https://yandex.uz/" hrefLang="uz"/><link rel="alternate" href="https://yandex.uz/" hrefLang="ru-UZ"/><link rel="alternate" href="https://yandex.com.tr/" hrefLang="tr"/><link rel="alternate" href="https://yandex.com/" hrefLang="en"/><link rel="alternate" href="https://yandex.com/" hrefLang="x-default"/><link rel="shortcut icon" href="https://yastatic.net/s3/home-static/_/nova/c0bfee03.png" sizes="16x16"/><link rel="shortcut icon" href="https://yastatic.net/s3/home-static/_/nova/49a51322.png" sizes="32x32"/><link rel="shortcut icon" href="https://yastatic.net/s3/home-static/_/nova/d17b570e.png" sizes="192x192"/><meta name="referrer" content="origin"/><meta property="fb:app_id" content="1524984910954255"/><meta property="og:title" content="Яндекс"/><meta property="og:description" content="Найдётся всё"/><meta property="og:url" content="https://ya.ru"/><meta property="og:type" content="website"/><meta property="og:site_name" content="Яндекс"/><meta property="og:locale" content="ru_RU"/><meta property="description" content="Найдётся всё"/><meta property="og:image" content="https://yastatic.net/s3/home-static/_/nova/4821e9d5.png"/><meta property="og:locale:alternate" content="be_BY"/><meta property="og:locale:alternate" content="kk_KZ"/><meta property="og:locale:alternate" content="tt_RU"/><meta property="og:locale:alternate" content="uk_UA"/><meta property="og:locale:alternate" content="en_US"/><meta property="og:locale:alternate" content="uz_UZ"/><meta property="og:locale:alternate" content="en_US"/><script>(function(){(function(r,s){if(r.Ya=r.Ya||{},Ya.Rum)throw new Error("Rum: interface is already defined");var a=r.performance,o=a&&a.timing&&a.timing.navigationStart||Ya.startPageLoad||+new Date,i=r.requestAnimationFrame,e=Ya.Rum={enabled:!!a,vsStart:document.visibilityState,vsChanged:!1,_defTimes:[],_defRes:[],_deltaMarks:{},_markListeners:{},_onComplete:[],_onInit:[],_unsubscribers:[],_settings:{},_vars:{},init:function(t,n){e._settings=t,e._vars=n},getTime:a&&a.now?function(){return a.now()}:Date.now?function(){return Date.now()-o}:function(){return new Date-o},time:function(t){e._deltaMarks[t]=[e.getTime()]},timeEnd:function(t,n){var u=e._deltaMarks,c=u[t];!c||c.length===0||c.push(e.getTime(),n)},sendTimeMark:function(t,n,u,c){n===s&&(n=e.getTime()),e._defTimes.push([t,n,c]),e.mark(t,n)},sendDelta:function(t,n,u,c){var m=e._deltaMarks;if(!m[t]&&typeof n<"u"){var g;c&&c.originalEndTime?g=c.originalEndTime:g=e.getTime(),m[t]=[g-n,g,u]}},sendResTiming:function(t,n){e._defRes.push([t,n])},sendRaf:function(t){var n=e.getSetting("forcePaintTimeSending");if(!(!i||!n&&e.isVisibilityChanged())){var u="2616."+t;i(function(){!n&&e.isVisibilityChanged()||(e.getSetting("sendFirstRaf")&&e.sendTimeMark(u+".205"),i(function(){!n&&e.isVisibilityChanged()||e.sendTimeMark(u+".1928")}))})}},isVisibilityChanged:function(){return e.vsStart&&(e.vsStart!=="visible"||e.vsChanged)},mark:a&&a.mark?function(t,n){a.mark(t+(n?": "+n:""))}:function(){},getSetting:function(t){var n=e._settings[t];return n===null?null:n||""},on:function(t,n){if(typeof n=="function")return(e._markListeners
-HTTP/1.1 200 Ok
-Accept-CH: Sec-CH-UA-Platform-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA, Sec-CH-UA-Full-Version-List, Sec-CH-UA-WoW64, Sec-CH-UA-Arch, Sec-CH-UA-Bitness, Sec-CH-UA-Platform, Sec-CH-UA-Full-Version, Viewport-Width, DPR, Device-Memory, RTT, Downlink, ECT
-Cache-Control: no-cache,no-store,max-age=0,must-revalidate
-Content-Security-Policy: script-src 'unsafe-inline' https://*.ya.ru https://mc.yandex.com https://yastatic.net https://mc.yandex.ru https://*.mc.yandex.ru https://adstat.yandex.ru https://ya.ru;media-src https://yastatic.net;connect-src https://*.strm.yandex.net https://mc.yandex.com https://ya.ru https://mc.yandex.ru https://*.mc.yandex.ru https://adstat.yandex.ru https://mc.admetrica.ru http://yabs.yandex.ru;img-src https://*.verify.yandex.ru https://*.ya.ru https://*.yandex.ru https://ya.ru https://yabs.yandex.by https://yabs.yandex.kz https://yabs.yandex.ru https://yabs.yandex.uz https://yandex.ru 'self' https://yastatic.net data: https://mc.admetrica.ru https://mc.yandex.com https://*.mc.yandex.ru https://adstat.yandex.ru https://mc.yandex.ru https://favicon.yandex.net https://avatars.mds.yandex.net blob:;frame-src https://*.ya.ru https://*.yandex.ru https://ya.ru https://yandex.ru https://mc.yandex.ru https://mc.yandex.md https://*.ya.ru https://*.yandex.ru https://ya.ru https://yandex.ru;style-src 'unsafe-inline' https://yastatic.net;report-uri https://csp.yandex.net/csp?project=morda&from=morda.big.ru&showid=1710509132224387-18195496932544461896-balancer-l7leveler-kubr-yp-sas-202-BAL-1604&h=stable-portal-mordago-59.vla.yp-c.yandex.net&yandexuid=9444618961710509132&&version=2024-03-14-510&adb=0;default-src 'self';font-src https://yastatic.net
-Content-Type: text/html; charset=UTF-8
-Date: Fri, 15 Mar 2024 13:25:32 GMT
-Expires: Fri, 15 Mar 2024 13:25:32 GMT
-Last-Modified: Fri, 15 Mar 2024 13:25:32 GMT
-Link: <https://yastatic.net/react/18.2.0/react-with-dom.min.js>;  rel="preload"; as="script"; crossorigin="anonymous";
-Link: <https://yastatic.net/s3/home-static/_/nova/2561b8ca6e63443254fceafdc825cabb3369ae39b5f4eb31343a3192d85350af.js>;  rel="preload"; as="script"; crossorigin="anonymous";
-NEL: {"report_to": "network-errors", "max_age": 100, "success_fraction": 0.001, "failure_fraction": 0.1}
-P3P: policyref="/w3c/p3p.xml", CP="NON DSP ADM DEV PSD IVDo OUR IND STP PHY PRE NAV UNI"
-Report-To: { "group": "network-errors", "max_age": 100, "endpoints": [{"url": "https://dr.yandex.net/nel", "priority": 1}, {"url": "https://dr2.yandex.net/nel", "priority": 2}]}
-Set-Cookie: yandex_gid=21242; Path=/; Domain=ya.ru; Expires=Sun, 14 Apr 2024 13:25:32 GMT
-Set-Cookie: yandexuid=9444618961710509132; Path=/; Domain=ya.ru; Expires=Sun, 15 Mar 2026 13:25:32 GMT
-Set-Cookie: yp=4294967295.skin.s#1713101132.ygu.1; Path=/; Domain=ya.ru; Expires=Sun, 15 Mar 2026 13:25:32 GMT
-Set-Cookie: is_gdpr=1; Path=/; Domain=.ya.ru; Expires=Sun, 15 Mar 2026 13:25:32 GMT
-Set-Cookie: is_gdpr_b=CL/XRBDY8AEYASgB; Path=/; Domain=.ya.ru; Expires=Sun, 15 Mar 2026 13:25:32 GMT
-Set-Cookie: _yasc=v9lNhlFrpekclEaG0/V4BsvH0I7GUVwzBgpPXFtBuv6o4GrPWIcd5C+j89+lxdfklOk=; domain=.ya.ru; path=/; expires=Mon, 13 Mar 2034 13:25:32 GMT; secure
-Set-Cookie: receive-cookie-deprecation=1; Path=/; Domain=.ya.ru; Expires=Sat, 15 Mar 2025 13:25:32 GMT; SameSite=None; Secure; HttpOnly; Partitioned
-Vary: Cookie,Accept-Language,Accept-Encoding
-X-Content-Type-Options: nosniff
-X-Frame-Options: DENY
-X-Yandex-Req-Id: 1710509132224387-18195496932544461896-balancer-l7leveler-kubr-yp-sas-202-BAL-1604
+HTTP/1.1 200 OK
+Date: Sat, 16 Mar 2024 18:28:13 GMT
+Server: Apache
+Last-Modified: Tue, 10 May 2022 07:25:00 GMT
+ETag: "4c9-5dea338f26b00"
+Accept-Ranges: bytes
+Content-Length: 1225
+Connection: close
+Content-Type: text/html
 
-<!doctype html><html lang="ru" class="i-ua_js_no i-ua_inlinesvg_yes document_services-suggest_yes"><head xmlns:og="http://ogp.me/ns#"><meta charSet="UTF-8"/><title>Яндекс</title><link rel="apple-touch-icon" href="https://yastatic.net/s3/home-static/_/nova/3c14217d.png" sizes="76x76"/><link rel="apple-touch-icon" href="https://yastatic.net/s3/home-static/_/nova/b839aa04.png" sizes="120x120"/><link rel="apple-touch-icon" href="https://yastatic.net/s3/home-static/_/nova/604dd380.png" sizes="152x152"/><link rel="apple-touch-icon" href="https://yastatic.net/s3/home-static/_/nova/1d994609.png" sizes="180x180"/><link rel="alternate" type="application/rss+xml" title="Новости Яндекса" href="https://yandex.ru/company/press_releases/news.rss"/><link rel="alternate" type="application/rss+xml" title="Блог Яндекса" href="https://yandex.ru/blog/company/rss"/><link rel="search" href="//yandex.ru/opensearch.xml" title="Яндекс" type="application/opensearchdescription+xml"/><link rel="manifest" href="/portal/front/resources/desktop/manifest-ru.json"/><link rel="alternate" href="https://ya.ru/" hrefLang="ru"/><link rel="alternate" href="https://ya.ru/" hrefLang="ru-RU"/><link rel="alternate" href="https://yandex.by/" hrefLang="be"/><link rel="alternate" href="https://yandex.by/" hrefLang="ru-BY"/><link rel="alternate" href="https://yandex.kz/" hrefLang="kk"/><link rel="alternate" href="https://yandex.kz/" hrefLang="ru-KZ"/><link rel="alternate" href="https://yandex.uz/" hrefLang="uz"/><link rel="alternate" href="https://yandex.uz/" hrefLang="ru-UZ"/><link rel="alternate" href="https://yandex.com.tr/" hrefLang="tr"/><link rel="alternate" href="https://yandex.com/" hrefLang="en"/><link rel="alternate" href="https://yandex.com/" hrefLang="x-default"/><link rel="shortcut icon" href="https://yastatic.net/s3/home-static/_/nova/c0bfee03.png" sizes="16x16"/><link rel="shortcut icon" href="https://yastatic.net/s3/home-static/_/nova/49a51322.png" sizes="32x32"/><link rel="shortcut icon" href="https://yastatic.net/s3/home-static/_/nova/d17b570e.png" sizes="192x192"/><meta name="referrer" content="origin"/><meta property="fb:app_id" content="1524984910954255"/><meta property="og:title" content="Яндекс"/><meta property="og:description" content="Найдётся всё"/><meta property="og:url" content="https://ya.ru"/><meta property="og:type" content="website"/><meta property="og:site_name" content="Яндекс"/><meta property="og:locale" content="ru_RU"/><meta property="description" content="Найдётся всё"/><meta property="og:image" content="https://yastatic.net/s3/home-static/_/nova/4821e9d5.png"/><meta property="og:locale:alternate" content="be_BY"/><meta property="og:locale:alternate" content="kk_KZ"/><meta property="og:locale:alternate" content="tt_RU"/><meta property="og:locale:alternate" content="uk_UA"/><meta property="og:locale:alternate" content="en_US"/><meta property="og:locale:alternate" content="uz_UZ"/><meta property="og:locale:alternate" content="en_US"/><script>(function(){(function(r,s){if(r.Ya=r.Ya||{},Ya.Rum)throw new Error("Rum: interface is already defined");var a=r.performance,o=a&&a.timing&&a.timing.navigationStart||Ya.startPageLoad||+new Date,i=r.requestAnimationFrame,e=Ya.Rum={enabled:!!a,vsStart:document.visibilityState,vsChanged:!1,_defTimes:[],_defRes:[],_deltaMarks:{},_markListeners:{},_onComplete:[],_onInit:[],_unsubscribers:[],_settings:{},_vars:{},init:function(t,n){e._settings=t,e._vars=n},getTime:a&&a.now?function(){return a.now()}:Date.now?function(){return Date.now()-o}:function(){return new Date-o},time:function(t){e._deltaMarks[t]=[e.getTime()]},timeEnd:function(t,n){var u=e._deltaMarks,c=u[t];!c||c.length===0||c.push(e.getTime(),n)},sendTimeMark:function(t,n,u,c){n===s&&(n=e.getTime()),e._defTimes.push([t,n,c]),e.mark(t,n)},sendDelta:function(t,n,u,c){var m=e._deltaMarks;if(!m[t]&&typeof n<"u"){var g;c&&c.originalEndTime?g=c.originalEndTime:g=e.getTime(),m[t]=[g-n,g,u]}},sendResTiming:function(t,n){e._defRes.push([t,n])},sendRaf:function(t){var n=e.getSetting("forcePaintTimeSending");if(!(!i||!n&&e.isVisibilityChanged())){var u="2616."+t;i(function(){!n&&e.isVisibilityChanged()||(e.getSetting("sendFirstRaf")&&e.sendTimeMark(u+".205"),i(function(){!n&&e.isVisibilityChanged()||e.sendTimeMark(u+".1928")}))})}},isVisibilityChanged:function(){return e.vsStart&&(e.vsStart!=="visible"||e.vsChanged)},mark:a&&a.mark?function(t,n){a.mark(t+(n?": "+n:""))}:function(){},getSetting:function(t){var n=e._settings[t];return n===null?null:n||""},on:function(t,n){if(typeof n=="function")return(e._markListene
-HTTP/1.1 200 Ok
-Accept-CH: Sec-CH-UA-Platform-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA, Sec-CH-UA-Full-Version-List, Sec-CH-UA-WoW64, Sec-CH-UA-Arch, Sec-CH-UA-Bitness, Sec-CH-UA-Platform, Sec-CH-UA-Full-Version, Viewport-Width, DPR, Device-Memory, RTT, Downlink, ECT
-Cache-Control: no-cache,no-store,max-age=0,must-revalidate
-Content-Security-Policy: report-uri https://csp.yandex.net/csp?project=morda&from=morda.big.ru&showid=1710509133361716-4922104709330055430-balancer-l7leveler-kubr-yp-sas-234-BAL-8715&h=prestable-portal-mordago-35.vla.yp-c.yandex.net&yandexuid=6300554301710509133&&version=2024-03-14-510&adb=0;script-src 'unsafe-inline' https://*.ya.ru https://mc.yandex.com https://yastatic.net https://mc.yandex.ru https://*.mc.yandex.ru https://adstat.yandex.ru https://ya.ru;media-src https://yastatic.net;connect-src https://*.strm.yandex.net https://mc.yandex.com https://ya.ru https://mc.yandex.ru https://*.mc.yandex.ru https://adstat.yandex.ru https://mc.admetrica.ru http://yabs.yandex.ru;img-src https://*.verify.yandex.ru https://*.ya.ru https://*.yandex.ru https://ya.ru https://yabs.yandex.by https://yabs.yandex.kz https://yabs.yandex.ru https://yabs.yandex.uz https://yandex.ru 'self' https://yastatic.net data: https://mc.admetrica.ru https://mc.yandex.com https://*.mc.yandex.ru https://adstat.yandex.ru https://mc.yandex.ru https://favicon.yandex.net https://avatars.mds.yandex.net blob:;frame-src https://*.ya.ru https://*.yandex.ru https://ya.ru https://yandex.ru https://mc.yandex.ru https://mc.yandex.md https://*.ya.ru https://*.yandex.ru https://ya.ru https://yandex.ru;style-src 'unsafe-inline' https://yastatic.net;default-src 'self';font-src https://yastatic.net
-Content-Type: text/html; charset=UTF-8
-Date: Fri, 15 Mar 2024 13:25:33 GMT
-Expires: Fri, 15 Mar 2024 13:25:33 GMT
-Last-Modified: Fri, 15 Mar 2024 13:25:33 GMT
-Link: <https://yastatic.net/react/18.2.0/react-with-dom.min.js>;  rel="preload"; as="script"; crossorigin="anonymous";
-Link: <https://yastatic.net/s3/home-static/_/nova/2561b8ca6e63443254fceafdc825cabb3369ae39b5f4eb31343a3192d85350af.js>;  rel="preload"; as="script"; crossorigin="anonymous";
-NEL: {"report_to": "network-errors", "max_age": 100, "success_fraction": 0.001, "failure_fraction": 0.1}
-P3P: policyref="/w3c/p3p.xml", CP="NON DSP ADM DEV PSD IVDo OUR IND STP PHY PRE NAV UNI"
-Report-To: { "group": "network-errors", "max_age": 100, "endpoints": [{"url": "https://dr.yandex.net/nel", "priority": 1}, {"url": "https://dr2.yandex.net/nel", "priority": 2}]}
-Set-Cookie: yandex_gid=21242; Path=/; Domain=ya.ru; Expires=Sun, 14 Apr 2024 13:25:33 GMT
-Set-Cookie: yandexuid=6300554301710509133; Path=/; Domain=ya.ru; Expires=Sun, 15 Mar 2026 13:25:33 GMT
-Set-Cookie: yp=4294967295.skin.s#1713101133.ygu.1; Path=/; Domain=ya.ru; Expires=Sun, 15 Mar 2026 13:25:33 GMT
-Set-Cookie: is_gdpr=1; Path=/; Domain=.ya.ru; Expires=Sun, 15 Mar 2026 13:25:33 GMT
-Set-Cookie: is_gdpr_b=CL/XRBDY8AEYASgB; Path=/; Domain=.ya.ru; Expires=Sun, 15 Mar 2026 13:25:33 GMT
-Set-Cookie: _yasc=DxaUW9qrAyBBUGKVhqdeWyT3mDt8CE0YwNME+gEe5y/+ZrLe8N1qhG/55ZwIh6relw==; domain=.YA.RU; path=/; expires=Mon, 13 Mar 2034 13:25:33 GMT; secure
-Vary: Cookie,Accept-Language,Accept-Encoding
-X-Content-Type-Options: nosniff
-X-Frame-Options: DENY
-X-Yandex-Req-Id: 1710509133361716-4922104709330055430-balancer-l7leveler-kubr-yp-sas-234-BAL-8715
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Cyta</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />	
+<style>
+body {
+    font-family: Arial, sans-serif;
+    font-size: 22px;
+    background-color: #efefef;
+	 color: #333;
+    background-image: none;
+    height: 100%;
+	line-height: 30px;
+	padding: 80px 0;
+}
+a {
+    color: #357729;
+    text-decoration: underline;
+}
+a:hover {
+    color: #666;
+    text-decoration: underline;
+}
+.table{
+	background-color: #fff;
+	border-radius: 8px;
+	box-shadow: 0 2px 8px 0 rgb(0 0 0 / 16%);
+	padding: 50px;
+	width: 96%;
+	max-width: 850px;
+}	
+</style>
+</head>
 
-<!doctype html><html lang="ru" class="i-ua_js_no i-ua_inlinesvg_yes document_services-suggest_yes"><head xmlns:og="http://ogp.me/ns#"><meta charSet="UTF-8"/><title>Яндекс</title><link rel="apple-touch-icon" href="https://yastatic.net/s3/home-static/_/nova/3c14217d.png" sizes="76x76"/><link rel="apple-touch-icon" href="https://yastatic.net/s3/home-static/_/nova/b839aa04.png" sizes="120x120"/><link rel="apple-touch-icon" href="https://yastatic.net/s3/home-static/_/nova/604dd380.png" sizes="152x152"/><link rel="apple-touch-icon" href="https://yastatic.net/s3/home-static/_/nova/1d994609.png" sizes="180x180"/><link rel="alternate" type="application/rss+xml" title="Новости Яндекса" href="https://yandex.ru/company/press_releases/news.rss"/><link rel="alternate" type="application/rss+xml" title="Блог Яндекса" href="https://yandex.ru/blog/company/rss"/><link rel="search" href="//yandex.ru/opensearch.xml" title="Яндекс" type="application/opensearchdescription+xml"/><link rel="manifest" href="/portal/front/resources/desktop/manifest-ru.json"/><link rel="alternate" href="https://ya.ru/" hrefLang="ru"/><link rel="alternate" href="https://ya.ru/" hrefLang="ru-RU"/><link rel="alternate" href="https://yandex.by/" hrefLang="be"/><link rel="alternate" href="https://yandex.by/" hrefLang="ru-BY"/><link rel="alternate" href="https://yandex.kz/" hrefLang="kk"/><link rel="alternate" href="https://yandex.kz/" hrefLang="ru-KZ"/><link rel="alternate" href="https://yandex.uz/" hrefLang="uz"/><link rel="alternate" href="https://yandex.uz/" hrefLang="ru-UZ"/><link rel="alternate" href="https://yandex.com.tr/" hrefLang="tr"/><link rel="alternate" href="https://yandex.com/" hrefLang="en"/><link rel="alternate" href="https://yandex.com/" hrefLang="x-default"/><link rel="shortcut icon" href="https://yastatic.net/s3/home-static/_/nova/c0bfee03.png" sizes="16x16"/><link rel="shortcut icon" href="https://yastatic.net/s3/home-static/_/nova/49a51322.png" sizes="32x32"/><link rel="shortcut icon" href="https://yastatic.net/s3/home-static/_/nova/d17b570e.png" sizes="192x192"/><meta name="referrer" content="origin"/><meta property="fb:app_id" content="1524984910954255"/><meta property="og:title" content="Яндекс"/><meta property="og:description" content="Найдётся всё"/><meta property="og:url" content="https://ya.ru"/><meta property="og:type" content="website"/><meta property="og:site_name" content="Яндекс"/><meta property="og:locale" content="ru_RU"/><meta property="description" content="Найдётся всё"/><meta property="og:image" content="https://yastatic.net/s3/home-static/_/nova/4821e9d5.png"/><meta property="og:locale:alternate" content="be_BY"/><meta property="og:locale:alternate" content="kk_KZ"/><meta property="og:locale:alternate" content="tt_RU"/><meta property="og:locale:alternate" content="uk_UA"/><meta property="og:locale:alternate" content="en_US"/><meta property="og:locale:alternate" content="uz_UZ"/><meta property="og:locale:alternate" content="en_US"/><script>(function(){(function(r,s){if(r.Ya=r.Ya||{},Ya.Rum)throw new Error("Rum: interface is already defined");var a=r.performance,o=a&&a.timing&&a.timing.navigationStart||Ya.startPageLoad||+new Date,i=r.requestAnimationFrame,e=Ya.Rum={enabled:!!a,vsStart:document.visibilityState,vsChanged:!1,_defTimes:[],_defRes:[],_deltaMarks:{},_markListeners:{},_onComplete:[],_onInit:[],_unsubscribers:[],_settings:{},_vars:{},init:function(t,n){e._settings=t,e._vars=n},getTime:a&&a.now?function(){return a.now()}:Date.now?function(){return Date.now()-o}:function(){return new Date-o},time:function(t){e._deltaMarks[t]=[e.getTime()]},timeEnd:function(t,n){var u=e._deltaMarks,c=u[t];!c||c.length===0||c.push(e.getTime(),n)},sendTimeMark:function(t,n,u,c){n===s&&(n=e.getTime()),e._defTimes.push([t,n,c]),e.mark(t,n)},sendDelta:function(t,n,u,c){var m=e._deltaMarks;if(!m[t]&&typeof n<"u"){var g;c&&c.originalEndTime?g=c.originalEndTime:g=e.getTime(),m[t]=[g-n,g,u]}},sendResTiming:function(t,n){e._defRes.push([t,n])},sendRaf:function(t){var n=e.getSetting("forcePaintTimeSending");if(!(!i||!n&&e.isVisibilityChanged())){var u="2616."+t;i(function(){!n&&e.isVisibilityChanged()||(e.getSetting("sendFirstRaf")&&e.sendTimeMark(u+".205"),i(function(){!n&&e.isVisibilityChanged()||e.sendTimeMark(u+".1928")}))})}},isVisibilityChanged:function(){return e.vsStart&&(e.vsStart!=="visible"||e.vsChanged)},mark:a&&a.mark?function(t,n){a.mark(t+(n?": "+n:""))}:function(){},getSetting:function(t){var n=e._settings[t];return n===null?null:n||""},on:function(t,n){if(typeof n=="function")return(e._markListeners[t]=e._markListeners[t]||[]).push(n),function(){if(e._markListeners[t]){var u=e._markListeners[t].indexOf(n);u>-1&&e._markListeners[t].splice(u,1)}
-HTTP/1.1 200 Ok
-Accept-CH: Sec-CH-UA-Platform-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA, Sec-CH-UA-Full-Version-List, Sec-CH-UA-WoW64, Sec-CH-UA-Arch, Sec-CH-UA-Bitness, Sec-CH-UA-Platform, Sec-CH-UA-Full-Version, Viewport-Width, DPR, Device-Memory, RTT, Downlink, ECT
-Cache-Control: no-cache,no-store,max-age=0,must-revalidate
-Content-Security-Policy: img-src https://*.verify.yandex.ru https://*.ya.ru https://*.yandex.ru https://ya.ru https://yabs.yandex.by https://yabs.yandex.kz https://yabs.yandex.ru https://yabs.yandex.uz https://yandex.ru 'self' https://yastatic.net data: https://mc.admetrica.ru https://mc.yandex.com https://*.mc.yandex.ru https://adstat.yandex.ru https://mc.yandex.ru https://favicon.yandex.net https://avatars.mds.yandex.net blob:;frame-src https://*.ya.ru https://*.yandex.ru https://ya.ru https://yandex.ru https://mc.yandex.ru https://mc.yandex.md https://*.ya.ru https://*.yandex.ru https://ya.ru https://yandex.ru;style-src 'unsafe-inline' https://yastatic.net;report-uri https://csp.yandex.net/csp?project=morda&from=morda.big.ru&showid=1710509134566240-1073864681083194885-balancer-l7leveler-kubr-yp-sas-46-BAL-2816&h=stable-portal-mordago-41.klg.yp-c.yandex.net&yandexuid=9831948851710509134&&version=2024-03-14-510&adb=0;script-src 'unsafe-inline' https://*.ya.ru https://mc.yandex.com https://yastatic.net https://mc.yandex.ru https://*.mc.yandex.ru https://adstat.yandex.ru https://ya.ru;media-src https://yastatic.net;connect-src https://*.strm.yandex.net https://mc.yandex.com https://ya.ru https://mc.yandex.ru https://*.mc.yandex.ru https://adstat.yandex.ru https://mc.admetrica.ru http://yabs.yandex.ru;default-src 'self';font-src https://yastatic.net
-Content-Type: text/html; charset=UTF-8
-Date: Fri, 15 Mar 2024 13:25:34 GMT
-Expires: Fri, 15 Mar 2024 13:25:34 GMT
-Last-Modified: Fri, 15 Mar 2024 13:25:34 GMT
-Link: <https://yastatic.net/react/18.2.0/react-with-dom.min.js>;  rel="preload"; as="script"; crossorigin="anonymous";
-Link: <https://yastatic.net/s3/home-static/_/nova/2561b8ca6e63443254fceafdc825cabb3369ae39b5f4eb31343a3192d85350af.js>;  rel="preload"; as="script"; crossorigin="anonymous";
-NEL: {"report_to": "network-errors", "max_age": 100, "success_fraction": 0.001, "failure_fraction": 0.1}
-P3P: policyref="/w3c/p3p.xml", CP="NON DSP ADM DEV PSD IVDo OUR IND STP PHY PRE NAV UNI"
-Report-To: { "group": "network-errors", "max_age": 100, "endpoints": [{"url": "https://dr.yandex.net/nel", "priority": 1}, {"url": "https://dr2.yandex.net/nel", "priority": 2}]}
-Set-Cookie: yandex_gid=21242; Path=/; Domain=ya.ru; Expires=Sun, 14 Apr 2024 13:25:34 GMT
-Set-Cookie: yandexuid=9831948851710509134; Path=/; Domain=ya.ru; Expires=Sun, 15 Mar 2026 13:25:34 GMT
-Set-Cookie: yp=4294967295.skin.s#1713101134.ygu.1; Path=/; Domain=ya.ru; Expires=Sun, 15 Mar 2026 13:25:34 GMT
-Set-Cookie: is_gdpr=1; Path=/; Domain=.ya.ru; Expires=Sun, 15 Mar 2026 13:25:34 GMT
-Set-Cookie: is_gdpr_b=CL/XRBDY8AEYASgB; Path=/; Domain=.ya.ru; Expires=Sun, 15 Mar 2026 13:25:34 GMT
-Set-Cookie: _yasc=s5CssorVmqw7IER1urM5yTyQrOIva06MThXgTKc+r9NaXkWrYc44E4v2/bTmSX/HmcE=; domain=.ya.ru; path=/; expires=Mon, 13 Mar 2034 13:25:34 GMT; secure
-Set-Cookie: receive-cookie-deprecation=1; Path=/; Domain=.ya.ru; Expires=Sat, 15 Mar 2025 13:25:34 GMT; SameSite=None; Secure; HttpOnly; Partitioned
-Vary: Cookie,Accept-Language,Accept-Encoding
-X-Content-Type-Options: nosniff
-X-Frame-Options: DENY
-X-Yandex-Req-Id: 1710509134566240-1073864681083194885-balancer-l7leveler-kubr-yp-sas-46-BAL-2816
+<body>
 
-<!doctype html><html lang="ru" class="i-ua_js_no i-ua_inlinesvg_yes document_services-suggest_yes"><head xmlns:og="http://ogp.me/ns#"><meta charSet="UTF-8"/><title>Яндекс</title><link rel="apple-touch-icon" href="https://yastatic.net/s3/home-static/_/nova/3c14217d.png" sizes="76x76"/><link rel="apple-touch-icon" href="https://yastatic.net/s3/home-static/_/nova/b839aa04.png" sizes="120x120"/><link rel="apple-touch-icon" href="https://yastatic.net/s3/home-static/_/nova/604dd380.png" sizes="152x152"/><link rel="apple-touch-icon" href="https://yastatic.net/s3/home-static/_/nova/1d994609.png" sizes="180x180"/><link rel="alternate" type="application/rss+xml" title="Новости Яндекса" href="https://yandex.ru/company/press_releases/news.rss"/><link rel="alternate" type="application/rss+xml" title="Блог Яндекса" href="https://yandex.ru/blog/company/rss"/><link rel="search" href="//yandex.ru/opensearch.xml" title="Яндекс" type="application/opensearchdescription+xml"/><link rel="manifest" href="/portal/front/resources/desktop/manifest-ru.json"/><link rel="alternate" href="https://ya.ru/" hrefLang="ru"/><link rel="alternate" href="https://ya.ru/" hrefLang="ru-RU"/><link rel="alternate" href="https://yandex.by/" hrefLang="be"/><link rel="alternate" href="https://yandex.by/" hrefLang="ru-BY"/><link rel="alternate" href="https://yandex.kz/" hrefLang="kk"/><link rel="alternate" href="https://yandex.kz/" hrefLang="ru-KZ"/><link rel="alternate" href="https://yandex.uz/" hrefLang="uz"/><link rel="alternate" href="https://yandex.uz/" hrefLang="ru-UZ"/><link rel="alternate" href="https://yandex.com.tr/" hrefLang="tr"/><link rel="alternate" href="https://yandex.com/" hrefLang="en"/><link rel="alternate" href="https://yandex.com/" hrefLang="x-default"/><link rel="shortcut icon" href="https://yastatic.net/s3/home-static/_/nova/c0bfee03.png" sizes="16x16"/><link rel="shortcut icon" href="https://yastatic.net/s3/home-static/_/nova/49a51322.png" sizes="32x32"/><link rel="shortcut icon" href="https://yastatic.net/s3/home-static/_/nova/d17b570e.png" sizes="192x192"/><meta name="referrer" content="origin"/><meta property="fb:app_id" content="1524984910954255"/><meta property="og:title" content="Яндекс"/><meta property="og:description" content="Найдётся всё"/><meta property="og:url" content="https://ya.ru"/><meta property="og:type" content="website"/><meta property="og:site_name" content="Яндекс"/><meta property="og:locale" content="ru_RU"/><meta property="description" content="Найдётся всё"/><meta property="og:image" content="https://yastatic.net/s3/home-static/_/nova/4821e9d5.png"/><meta property="og:locale:alternate" content="be_BY"/><meta property="og:locale:alternate" content="kk_KZ"/><meta property="og:locale:alternate" content="tt_RU"/><meta property="og:locale:alternate" content="uk_UA"/><meta property="og:locale:alternate" content="en_US"/><meta property="og:locale:alternate" content="uz_UZ"/><meta property="og:locale:alternate" content="en_US"/><script>(function(){(function(r,s){if(r.Ya=r.Ya||{},Ya.Rum)throw new Error("Rum: interface is already defined");var a=r.performance,o=a&&a.timing&&a.timing.navigationStart||Ya.startPageLoad||+new Date,i=r.requestAnimationFrame,e=Ya.Rum={enabled:!!a,vsStart:document.visibilityState,vsChanged:!1,_defTimes:[],_defRes:[],_deltaMarks:{},_markListeners:{},_onComplete:[],_onInit:[],_unsubscribers:[],_settings:{},_vars:{},init:function(t,n){e._settings=t,e._vars=n},getTime:a&&a.now?function(){return a.now()}:Date.now?function(){return Date.now()-o}:function(){return new Date-o},time:function(t){e._deltaMarks[t]=[e.getTime()]},timeEnd:function(t,n){var u=e._deltaMarks,c=u[t];!c||c.length===0||c.push(e.getTime(),n)},sendTimeMark:function(t,n,u,c){n===s&&(n=e.getTime()),e._defTimes.push([t,n,c]),e.mark(t,n)},sendDelta:function(t,n,u,c){var m=e._deltaMarks;if(!m[t]&&typeof n<"u"){var g;c&&c.originalEndTime?g=c.originalEndTime:g=e.getTime(),m[t]=[g-n,g,u]}},sendResTiming:function(t,n){e._defRes.push([t,n])},sendRaf:function(t){var n=e.getSetting("forcePaintTimeSending");if(!(!i||!n&&e.isVisibilityChanged())){var u="2616."+t;i(function(){!n&&e.isVisibilityChanged()||(e.getSetting("sendFirstRaf")&&e.sendTimeMark(u+".205"),i(function(){!n&&e.isVisibilityChanged()||e.sendTimeMark(u+".1928")}))})}},isVisibilityChanged:function(){return e.vsStart&&(e.vsStart!=="visible"||e.vsChanged)},mark:a&&a.mark?function(t,n){a.mark(t+(n?": "+n:""))}:function(){},getSetting:function(t){var n=e._settings[t];return n===null?null:n||""},on:function(t,n){if(typeof n=="function")return(e._markListeners[t
-HTTP/1.1 200 Ok
-Accept-CH: Sec-CH-UA-Platform-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA, Sec-CH-UA-Full-Version-List, Sec-CH-UA-WoW64, Sec-CH-UA-Arch, Sec-CH-UA-Bitness, Sec-CH-UA-Platform, Sec-CH-UA-Full-Version, Viewport-Width, DPR, Device-Memory, RTT, Downlink, ECT
-Cache-Control: no-cache,no-store,max-age=0,must-revalidate
-Content-Security-Policy: script-src 'unsafe-inline' https://*.ya.ru https://mc.yandex.com https://yastatic.net https://mc.yandex.ru https://*.mc.yandex.ru https://adstat.yandex.ru https://ya.ru;media-src https://yastatic.net;connect-src https://*.strm.yandex.net https://mc.yandex.com https://ya.ru https://mc.yandex.ru https://*.mc.yandex.ru https://adstat.yandex.ru https://mc.admetrica.ru http://yabs.yandex.ru;img-src https://*.verify.yandex.ru https://*.ya.ru https://*.yandex.ru https://ya.ru https://yabs.yandex.by https://yabs.yandex.kz https://yabs.yandex.ru https://yabs.yandex.uz https://yandex.ru 'self' https://yastatic.net data: https://mc.admetrica.ru https://mc.yandex.com https://*.mc.yandex.ru https://adstat.yandex.ru https://mc.yandex.ru https://favicon.yandex.net https://avatars.mds.yandex.net blob:;frame-src https://*.ya.ru https://*.yandex.
-HTTP/1.1 200 Ok
-Accept-CH: Sec-CH-UA-Platform-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA, Sec-CH-UA-Full-Version-List, Sec-CH-UA-WoW64, Sec-CH-UA-Arch, Sec-CH-UA-Bitness, Sec-CH-UA-Platform, Sec-CH-UA-Full-Version, Viewport-Width, DPR, Device-Memory, RTT, Downlink, ECT
-Cache-Control: no-cache,no-store,max-age=0,must-revalidate
-Content-Security-Policy: img-src https://*.verify.yandex.ru https://*.ya.ru https://*.yandex.ru https://ya.ru https://yabs.yandex.by https://yabs.yandex.kz https://yabs.yandex.ru https://yabs.yandex.uz https://yandex.ru 'self' https://yastatic.net data: https://mc.admetrica.ru https://mc.yandex.com https://*.mc.yandex.ru https://adstat.yandex.ru https://mc.yandex.ru https://favicon.yandex.net https://avatars.mds.yandex.net blob:;frame-src https://*.ya.ru https://*.yandex.ru https://ya.ru https://yandex.ru https://mc.yandex.ru https://mc.yandex.md https://*.ya.ru https://*.yandex.ru https://ya.ru https://yandex.ru;style-src 'unsafe-inline' https://yastatic.net;report-uri https://csp.yandex.net/csp?project=morda&from=morda.big.ru&showid=1710509136724262-10281009614982292344-balancer-l7leveler-kubr-yp-sas-163-BAL-6429&h=stable-portal-mordago-158.sas.yp-c.yandex.net&yandexuid=6822923441710509136&&version=2024-03-14-510&adb=0;script-src 'unsafe-inline' https://*.ya.ru https://mc.yandex.com https://yastatic.net https://mc.yandex.ru https://*.mc.yandex.ru https://adstat.yandex.ru https://ya.ru;media-src https://yastatic.net;connect-src https://*.strm.yandex.net https://mc.yandex.com https://ya.ru https://mc.yandex.ru https://*.mc.yandex.ru https://adstat.yandex.ru https://mc.admetrica.ru http://yabs.yandex.ru;default-src 'self';font-src https://yastatic.net
-Content-Type: text/html; charset=UTF-8
-Date: Fri, 15 Mar 2024 13:25:36 GMT
-Expires: Fri, 15 Mar 2024 13:25:36 GMT
-Last-Modified: Fri, 15 Mar 2024 13:25:36 GMT
-Link: <https://yastatic.net/react/18.2.0/react-with-dom.min.js>;  rel="preload"; as="script"; crossorigin="anonymous";
-Link: <https://yastatic.net/s3/home-static/_/nova/2561b8ca6e63443254fceafdc825cabb3369ae39b5f4eb31343a3192d85350af.js>;  rel="preload"; as="script"; crossorigin="anonymous";
-NEL: {"report_to": "network-errors", "max_age": 100, "success_fraction": 0.001, "failure_fraction": 0.1}
-P3P: policyref="/w3c/p3p.xml", CP="NON DSP ADM DEV PSD IVDo OUR IND STP PHY PRE NAV UNI"
-Report-To: { "group": "network-errors", "max_age": 100, "endpoints": [{"url": "https://dr.yandex.net/nel", "priority": 1}, {"url": "https://dr2.yandex.net/nel", "priority": 2}]}
-Set-Cookie: yandex_gid=21242; Path=/; Domain=ya.ru; Expires=Sun, 14 Apr 2024 13:25:36 GMT
-Set-Cookie: yandexuid=6822923441710509136; Path=/; Domain=ya.ru; Expires=Sun, 15 Mar 2026 13:25:36 GMT
-Set-Cookie: yp=4294967295.skin.s#1713101136.ygu.1; Path=/; Domain=ya.ru; Expires=Sun, 15 Mar 2026 13:25:36 GMT
-Set-Cookie: is_gdpr=1; Path=/; Domain=.ya.ru; Expires=Sun, 15 Mar 2026 13:25:36 GMT
-Set-Cookie: is_gdpr_b=CL/XRBDY8AEYASgB; Path=/; Domain=.ya.ru; Expires=Sun, 15 Mar 2026 13:25:36 GMT
-Set-Cookie: _yasc=+hCUsdC5WlPDmeUukwCV+IXkDD7qutVCVvWQcOv7gOAs1DPqreyjSpGDrSN7FS7mVu9K; domain=.ya.ru; path=/; expires=Mon, 13 Mar 2034 13:25:36 GMT; secure
-Set-Cookie: receive-cookie-deprecation=1; Path=/; Domain=.ya.ru; Expires=Sat, 15 Mar 2025 13:25:36 GMT; SameSite=None; Secure; HttpOnly; Partitioned
-Vary: Cookie,Accept-Language,Accept-Encoding
-X-Content-Type-Options: nosniff
-X-Frame-Options: DENY
-X-Yandex-Req-Id: 1710509136724262-10281009614982292344-balancer-l7leveler-kubr-yp-sas-163-BAL-6429
+<p style="text-align: center;"><img src="cyta-logo.png" alt="Cyta"/></p>
+<table class="table" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tbody>
+    <tr>
+      <td align="center"><span style="padding: 40px 0;"><img src="cancel-mid.jpg" width="100" height="100" alt=""/></span><br>
+      <p>This site can’t be reached due tο compliance with the Council Regulation (EU) 350/2022 and with EU and National Laws, only for as long as necess
+HTTP/1.1 200 OK
+Date: Sat, 16 Mar 2024 18:28:13 GMT
+Server: Apache
+Last-Modified: Tue, 10 May 2022 07:25:00 GMT
+ETag: "4c9-5dea338f26b00"
+Accept-Ranges: bytes
+Content-Length: 1225
+Connection: close
+Content-Type: text/html
 
-<!doctype html><html lang="ru" class="i-ua_js_no i-ua_inlinesvg_yes document_services-suggest_yes"><head xmlns:og="http://ogp.me/ns#"><meta charSet="UTF-8"/><title>Яндекс</title><link rel="apple-touch-icon" href="https://yastatic.net/s3/home-static/_/nova/3c14217d.png" sizes="76x76"/><link rel="apple-touch-icon" href="https://yastatic.net/s3/home-static/_/nova/b839aa04.png" sizes="120x120"/><link rel="apple-touch-icon" href="https://yastatic.net/s3/home-static/_/nova/604dd380.png" sizes="152x152"/><link rel="apple-touch-icon" href="https://yastatic.net/s3/home-static/_/nova/1d994609.png" sizes="180x180"/><link rel="alternate" type="application/rss+xml" title="Новости Яндекса" href="https://yandex.ru/company/press_releases/news.rss"/><link rel="alternate" type="application/rss+xml" title="Блог Яндекса" href="https://yandex.ru/blog/company/rss"/><link rel="search" href="//yandex.ru/opensearch.xml" title="Яндекс" type="application/opensearchdescription+xml"/><link rel="manifest" href="/portal/front/resources/desktop/manifest-ru.json"/><link rel="alternate" href="https://ya.ru/" hrefLang="ru"/><link rel="alternate" href="https://ya.ru/" hrefLang="ru-RU"/><link rel="alternate" href="https://yandex.by/" hrefLang="be"/><link rel="alternate" href="https://yandex.by/" hrefLang="ru-BY"/><link rel="alternate" href="https://yandex.kz/" hrefLang="kk"/><link rel="alternate" href="https://yandex.kz/" hrefLang="ru-KZ"/><link rel="alternate" href="https://yandex.uz/" hrefLang="uz"/><link rel="alternate" href="https://yandex.uz/" hrefLang="ru-UZ"/><link rel="alternate" href="https://yandex.com.tr/" hrefLang="tr"/><link rel="alternate" href="https://yandex.com/" hrefLang="en"/><link rel="alternate" href="https://yandex.com/" hrefLang="x-default"/><link rel="shortcut icon" href="https://yastatic.net/s3/home-static/_/nova/c0bfee03.png" sizes="16x16"/><link rel="shortcut icon" href="https://yastatic.net/s3/home-static/_/nova/49a51322.png" sizes="32x32"/><link rel="shortcut icon" href="https://yastatic.net/s3/home-static/_/nova/d17b570e.png" sizes="192x192"/><meta name="referrer" content="origin"/><meta property="fb:app_id" content="1524984910954255"/><meta property="og:title" content="Яндекс"/><meta property="og:description" content="Найдётся всё"/><meta property="og:url" content="https://ya.ru"/><meta property="og:type" content="website"/><meta property="og:site_name" content="Яндекс"/><meta property="og:locale" content="ru_RU"/><meta property="description" content="Найдётся всё"/><meta property="og:image" content="https://yastatic.net/s3/home-static/_/nova/4821e9d5.png"/><meta property="og:locale:alternate" content="be_BY"/><meta property="og:locale:alternate" content="kk_KZ"/><meta property="og:locale:alternate" content="tt_RU"/><meta property="og:locale:alternate" content="uk_UA"/><meta property="og:locale:alternate" content="en_US"/><meta property="og:locale:alternate" content="uz_UZ"/><meta property="og:locale:alternate" content="en_US"/><script>(function(){(function(r,s){if(r.Ya=r.Ya||{},Ya.Rum)throw new Error("Rum: interface is already defined");var a=r.performance,o=a&&a.timing&&a.timing.navigationStart||Ya.startPageLoad||+new Date,i=r.requestAnimationFrame,e=Ya.Rum={enabled:!!a,vsStart:document.visibilityState,vsChanged:!1,_defTimes:[],_defRes:[],_deltaMarks:{},_markListeners:{},_onComplete:[],_onInit:[],_unsubscribers:[],_settings:{},_vars:{},init:function(t,n){e._settings=t,e._vars=n},getTime:a&&a.now?function(){return a.now()}:Date.now?function(){return Date.now()-o}:function(){return new Date-o},time:function(t){e._deltaMarks[t]=[e.getTime()]},timeEnd:function(t,n){var u=e._deltaMarks,c=u[t];!c||c.length===0||c.push(e.getTime(),n)},sendTimeMark:function(t,n,u,c){n===s&&(n=e.getTime()),e._defTimes.push([t,n,c]),e.mark(t,n)},sendDelta:function(t,n,u,c){var m=e._deltaMarks;if(!m[t]&&typeof n<"u"){var g;c&&c.originalEndTime?g=c.originalEndTime:g=e.getTime(),m[t]=[g-n,g,u]}},sendResTiming:function(t,n){e._defRes.push([t,n])},sendRaf:function(t){var n=e.getSetting("forcePaintTimeSending");if(!(!i||!n&&e.isVisibilityChanged())){var u="2616."+t;i(function(){!n&&e.isVisibilityChanged()||(e.getSetting("sendFirstRaf")&&e.sendTimeMark(u+".205"),i(function(){!n&&e.isVisibilityChanged()||e.sendTimeMark(u+".1928")}))})}},isVisibilityChanged:function(){return e.vsStart&&(e.vsStart!=="visible"||e.vsChanged)},mark:a&&a.mark?function(t,n){a.mark(t+(n?": "+n:""))}:function(){},getSetting:function(t){var n=e._settings[t];return n===null?null:n||""},on:function(t,n){if(typeof n=="function")return(e._markListen
-HTTP/1.1 200 Ok
-Accept-CH: Sec-CH-UA-Platform-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA, Sec-CH-UA-Full-Version-List, Sec-CH-UA-WoW64, Sec-CH-UA-Arch, Sec-CH-UA-Bitness, Sec-CH-UA-Platform, Sec-CH-UA-Full-Version, Viewport-Width, DPR, Device-Memory, RTT, Downlink, ECT
-Cache-Control: no-cache,no-store,max-age=0,must-revalidate
-Content-Security-Policy: script-src 'unsafe-inline' https://*.ya.ru https://mc.yandex.com https://yastatic.net https://mc.yandex.ru https://*.mc.yandex.ru https://adstat.yandex.ru https://ya.ru;media-src https://yastatic.net;connect-src https://*.strm.yandex.net https://mc.yandex.com https://ya.ru https://mc.yandex.ru https://*.mc.yandex.ru https://adstat.yandex.ru https://mc.admetrica.ru http://yabs.yandex.ru;img-src https://*.verify.yandex.ru https://*.ya.ru https://*.yandex.ru https://ya.ru https://yabs.yandex.by https://yabs.yandex.kz https://yabs.yandex.ru https://yabs.yandex.uz https://yandex.ru 'self' https://yastatic.net data: https://mc.admetrica.ru https://mc.yandex.com https://*.mc.yandex.ru https://adstat.yandex.ru https://mc.yandex.ru https://favicon.yandex.net https://avatars.mds.yandex.net blob:;frame-src https://*.ya.ru https://*.yandex.
-HTTP/1.1 301 Moved permanently
-Accept-CH: Sec-CH-UA-Platform-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA, Sec-CH-UA-Full-Version-List, Sec-CH-UA-WoW64, Sec-CH-UA-Arch, Sec-CH-UA-Bitness, Sec-CH-UA-Platform, Sec-CH-UA-Full-Version, Viewport-Width, DPR, Device-Memory, RTT, Downlink, ECT
-Cache-Control: max-age=1209600,private
-Date: Fri, 15 Mar 2024 13:25:39 GMT
-Location: https://ya.ru/
-NEL: {"report_to": "network-errors", "max_age": 100, "success_fraction": 0.001, "failure_fraction": 0.1}
-P3P: policyref="/w3c/p3p.xml", CP="NON DSP ADM DEV PSD IVDo OUR IND STP PHY PRE NAV UNI"
-Portal: Home
-Report-To: { "group": "network-errors", "max_age": 100, "endpoints": [{"url": "https://dr.yandex.net/nel", "priority": 1}, {"url": "https://dr2.yandex.net/nel", "priority": 2}]}
-X-Content-Type-Options: nosniff
-X-Yandex-Req-Id: 1710509139334910-16933614680867317196-balancer-l7leveler-kubr-yp-sas-260-BAL-7725
-set-cookie: is_gdpr=1; Path=/; Domain=.ya.ru; Expires=Sun, 15 Mar 2026 13:25:39 GMT
-set-cookie: is_gdpr_b=CL/XRBDY8AEYASgB; Path=/; Domain=.ya.ru; Expires=Sun, 15 Mar 2026 13:25:39 GMT
-set-cookie: _yasc=hN+ph9Vdua3TeUZJS1nj8Xqd1vCoIAI5w3Kkd3kQg1Lw9DHFNl7xhcUaG8E4mkQC; domain=.ru.; p
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Cyta</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />	
+<style>
+body {
+    font-family: Arial, sans-serif;
+    font-size: 22px;
+    background-color: #efefef;
+	 color: #333;
+    background-image: none;
+    height: 100%;
+	line-height: 30px;
+	padding: 80px 0;
+}
+a {
+    color: #357729;
+    text-decoration: underline;
+}
+a:hover {
+    color: #666;
+    text-decoration: underline;
+}
+.table{
+	background-color: #fff;
+	border-radius: 8px;
+	box-shadow: 0 2px 8px 0 rgb(0 0 0 / 16%);
+	padding: 50px;
+	width: 96%;
+	max-width: 850px;
+}	
+</style>
+</head>
+
+<body>
+
+<p style="text-align: center;"><img src="cyta-logo.png" alt="Cyta"/></p>
+<table class="table" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tbody>
+    <tr>
+      <td align="center"><span style="padding: 40px 0;"><img src="cancel-mid.jpg" width="100" height="100" alt=""/></span><br>
+      <p>This site can’t be reached due tο compliance with the Council Regulation (EU) 350/2022 and with EU and National Laws, only for as long as necessary.</p></td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>
+
+HTTP/1.1 200 OK
+Date: Sat, 16 Mar 2024 18:28:13 GMT
+Server: Apache
+Last-Modified: Tue, 10 May 2022 07:25:00 GMT
+ETag: "4c9-5dea338f26b00"
+Accept-Ranges: bytes
+Content-Length: 1225
+Connection: close
+Content-Type: text/html
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Cyta</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />	
+<style>
+body {
+    font-family: Arial, sans-serif;
+    font-size: 22px;
+    background-color: #efefef;
+	 color: #333;
+    background-image: none;
+    height: 100%;
+	line-height: 30px;
+	padding: 80px 0;
+}
+a {
+    color: #357729;
+    text-decoration: underline;
+}
+a:hover {
+    color: #666;
+    text-decoration: underline;
+}
+.table{
+	background-color: #fff;
+	border-radius: 8px;
+	box-shadow: 0 2px 8px 0 rgb(0 0 0 / 16%);
+	padding: 50px;
+	width: 96%;
+	max-width: 850px;
+}	
+</style>
+</head>
+
+<body>
+
+<p style="text-align: center;"><img src="cyta-logo.png" alt="Cyta"/></p>
+<table class="table" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tbody>
+    <tr>
+      <td align="center"><span style="padding: 40px 0;"><img src="cancel-mid.jpg" width="100" height="100" alt=""/></span><br>
+      <p>This site can’t be reached due tο compliance with the Council Regulation (EU) 350/2022 and with EU and National Laws, only for as long as necessary.</p></td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>
+
+HTTP/1.1 200 OK
+Date: Sat, 16 Mar 2024 18:28:13 GMT
+Server: Apache
+Last-Modified: Tue, 10 May 2022 07:25:00 GMT
+ETag: "4c9-5dea338f26b00"
+Accept-Ranges: bytes
+Content-Length: 1225
+Connection: close
+Content-Type: text/html
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Cyta</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />	
+<style>
+body {
+    font-family: Arial, sans-serif;
+    font-size: 22px;
+    background-color: #efefef;
+	 color: #333;
+    background-image: none;
+    height: 100%;
+	line-height: 30px;
+	padding: 80px 0;
+}
+a {
+    color: #357729;
+    text-decoration: underline;
+}
+a:hover {
+    color: #666;
+    text-decoration: underline;
+}
+.table{
+	background-color: #fff;
+	border-radius: 8px;
+	box-shadow: 0 2px 8px 0 rgb(0 0 0 / 16%);
+	padding: 50px;
+	width: 96%;
+	max-width: 850px;
+}	
+</style>
+</head>
+
+<body>
+
+<p style="text-align: center;"><img src="cyta-logo.png" alt="Cyta"/></p>
+<table class="table" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tbody>
+    <tr>
+      <td align="center"><span style="padding: 40px 0;"><img src="cancel-mid.jpg" width="100" height="100" alt=""/></span><br>
+      <p>This site can’t be reached due tο compliance with the Council Regulation (EU) 350/2022 and with EU and National Laws, only for as long as necess
+HTTP/1.1 400 Bad Request
+Date: Sat, 16 Mar 2024 18:28:13 GMT
+Server: Apache
+Content-Length: 226
+Connection: close
+Content-Type: text/html; charset=iso-8859-1
+
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>400 Bad Request</title>
+</head><body>
+<h1>Bad Request</h1>
+<p>Your browser sent a request that this server could not understand.<br />
+</p>
+</body></html>
+
 fragment0
-dsfsdfT / HTTP/1.0
-Host: ya.ru
+T / HTTP/1.0
+Host: lenta.ru
 Connection: close
 
 
 fragment1
-dsfsdf/ HTTP/1.0
-Host: ya.ru
+/ HTTP/1.0
+Host: lenta.ru
 Connection: close
 
 
 fragment2
-dsfsdfHTTP/1.0
-Host: ya.ru
+HTTP/1.0
+Host: lenta.ru
 Connection: close
 
 
 fragment3
-dsfsdfTP/1.0
-Host: ya.ru
+TP/1.0
+Host: lenta.ru
 Connection: close
 
 
 fragment4
-dsfsdf/1.0
-Host: ya.ru
+/1.0
+Host: lenta.ru
 Connection: close
 
 
 fragment5
-dsfsdf.0
-Host: ya.ru
+.0
+Host: lenta.ru
 Connection: close
 
 
-HTTP/1.1 200 Ok
-Accept-CH: Sec-CH-UA-Platform-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA, Sec-CH-UA-Full-Version-List, Sec-CH-UA-WoW64, Sec-CH-UA-Arch, Sec-CH-UA-Bitness, Sec-CH-UA-Platform, Sec-CH-UA-Full-Version, Viewport-Width, DPR, Device-Memory, RTT, Downlink, ECT
-Cache-Control: no-cache,no-store,max-age=0,must-revalidate
-Content-Security-Policy: style-src 'unsafe-inline' https://yastatic.net;report-uri https://csp.yandex.net/csp?project=morda&from=morda.big.ru&showid=1710509139603864-1229995226268207785-balancer-l7leveler-kubr-yp-sas-35-BAL-5363&h=stable-portal-mordago-27.vla.yp-c.yandex.net&yandexuid=5682077851710509139&&version=2024-03-14-510&adb=0;script-src 'unsafe-inline' https://*.ya.ru https://mc.yandex.com https://yastatic.net https://mc.yandex.ru https://*.mc.yandex.ru https://adstat.yandex.ru https://ya.ru;media-src https://yastatic.net;connect-src https://*.strm.yandex.net https://mc.yandex.com https://ya.ru https://mc.yandex.ru https://*.mc.yandex.ru https://adstat.yandex.ru https://mc.admetrica.ru http://yabs.yandex.ru;img-src https://*.verify.yandex.ru https://*.ya.ru https://*.yandex.ru https://ya.ru https://yabs.yandex.by https://yabs.yandex.kz https://yabs.yandex.ru https://yabs.yandex.uz https://yandex.ru 'self' https://yastatic.net data: https://mc.admetrica.ru https://mc.yandex.com https://*.mc.yandex.ru https://adstat.yandex.ru https://mc.yandex.ru https://favicon.yandex.net https://avatars.mds.yandex.net blob:;frame-src https://*.ya.ru https://*.yandex.ru https://ya.ru https://yandex.ru https://mc.yandex.ru https://mc.yandex.md https://*.ya.ru https://*.yandex.ru https://ya.ru https://yandex.ru;default-src 'self';font-src https://yastatic.net
-Content-Type: text/html; charset=UTF-8
-Date: Fri, 15 Mar 2024 13:25:39 GMT
-Expires: Fri, 15 Mar 2024 13:25:39 GMT
-Last-Modified: Fri, 15 Mar 2024 13:25:39 GMT
-Link: <https://yastatic.net/react/18.2.0/react-with-dom.min.js>;  rel="preload"; as="script"; crossorigin="anonymous";
-Link: <https://yastatic.net/s3/home-static/_/nova/2561b8ca6e63443254fceafdc825cabb3369ae39b5f4eb31343a3192d85350af.js>;  rel="preload"; as="script"; crossorigin="anonymous";
-NEL: {"report_to": "network-errors", "max_age": 100, "success_fraction": 0.001, "failure_fraction": 0.1}
-P3P: policyref="/w3c/p3p.xml", CP="NON DSP ADM DEV PSD IVDo OUR IND STP PHY PRE NAV UNI"
-Report-To: { "group": "network-errors", "max_age": 100, "endpoints": [{"url": "https://dr.yandex.net/nel", "priority": 1}, {"url": "https://dr2.yandex.net/nel", "priority": 2}]}
-Set-Cookie: yandex_gid=21242; Path=/; Domain=ya.ru; Expires=Sun, 14 Apr 2024 13:25:39 GMT
-Set-Cookie: yandexuid=5682077851710509139; Path=/; Domain=ya.ru; Expires=Sun, 15 Mar 2026 13:25:39 GMT
-Set-Cookie: yp=4294967295.skin.s#1713101139.ygu.1; Path=/; Domain=ya.ru; Expires=Sun, 15 Mar 2026 13:25:39 GMT
-Set-Cookie: is_gdpr=1; Path=/; Domain=.ya.ru; Expires=Sun, 15 Mar 2026 13:25:39 GMT
-Set-Cookie: is_gdpr_b=CL/XRBDY8AEYASgB; Path=/; Domain=.ya.ru; Expires=Sun, 15 Mar 2026 13:25:39 GMT
-Set-Cookie: _yasc=lr7CK+M4vmCB8jRuo4+e5ROtYdxF/HAYivnt5MCp3reHdul3kgv4diLgqNKC4WOZPkPo; domain=.ya.ru; path=/; expires=Mon, 13 Mar 2034 13:25:39 GMT; secure
-Set-Cookie: receive-cookie-deprecation=1; Path=/; Domain=.ya.ru; Expires=Sat, 15 Mar 2025 13:25:39 GMT; SameSite=None; Secure; HttpOnly; Partitioned
-Vary: Cookie,Accept-Language,Accept-Encoding
-X-Content-Type-Options: nosniff
-X-Frame-Options: DENY
-X-Yandex-Req-Id: 1710509139603864-1229995226268207785-balancer-l7leveler-kubr-yp-sas-35-BAL-5363
+HTTP/1.1 200 OK
+Date: Sat, 16 Mar 2024 18:28:13 GMT
+Server: Apache
+Last-Modified: Tue, 10 May 2022 07:25:00 GMT
+ETag: "4c9-5dea338f26b00"
+Accept-Ranges: bytes
+Content-Length: 1225
+Connection: close
+Content-Type: text/html
 
-<!doctype html><html lang="ru" class="i-ua_js_no i-ua_inlinesvg_yes document_services-suggest_yes"><head xmlns:og="http://ogp.me/ns#"><meta charSet="UTF-8"/><title>Яндекс</title><link rel="apple-touch-icon" href="https://yastatic.net/s3/home-static/_/nova/3c14217d.png" sizes="76x76"/><link rel="apple-touch-icon" href="https://yastatic.net/s3/home-static/_/nova/b839aa04.png" sizes="120x120"/><link rel="apple-touch-icon" href="https://yastatic.net/s3/home-static/_/nova/604dd380.png" sizes="152x152"/><link rel="apple-touch-icon" href="https://yastatic.net/s3/home-static/_/nova/1d994609.png" sizes="180x180"/><link rel="alternate" type="application/rss+xml" title="Новости Яндекса" href="https://yandex.ru/company/press_releases/news.rss"/><link rel="alternate" type="application/rss+xml" title="Блог Яндекса" href="https://yandex.ru/blog/company/rss"/><link rel="search" href="//yandex.ru/opensearch.xml" title="Яндекс" type="application/opensearchdescription+xml"/><link rel="manifest" href="/portal/front/resources/desktop/manifest-ru.json"/><link rel="alternate" href="https://ya.ru/" hrefLang="ru"/><link rel="alternate" href="https://ya.ru/" hrefLang="ru-RU"/><link rel="alternate" href="https://yandex.by/" hrefLang="be"/><link rel="alternate" href="https://yandex.by/" hrefLang="ru-BY"/><link rel="alternate" href="https://yandex.kz/" hrefLang="kk"/><link rel="alternate" href="https://yandex.kz/" hrefLang="ru-KZ"/><link rel="alternate" href="https://yandex.uz/" hrefLang="uz"/><link rel="alternate" href="https://yandex.uz/" hrefLang="ru-UZ"/><link rel="alternate" href="https://yandex.com.tr/" hrefLang="tr"/><link rel="alternate" href="https://yandex.com/" hrefLang="en"/><link rel="alternate" href="https://yandex.com/" hrefLang="x-default"/><link rel="shortcut icon" href="https://yastatic.net/s3/home-static/_/nova/c0bfee03.png" sizes="16x16"/><link rel="shortcut icon" href="https://yastatic.net/s3/home-static/_/nova/49a51322.png" sizes="32x32"/><link rel="shortcut icon" href="https://yastatic.net/s3/home-static/_/nova/d17b570e.png" sizes="192x192"/><meta name="referrer" content="origin"/><meta property="fb:app_id" content="1524984910954255"/><meta property="og:title" content="Яндекс"/><meta property="og:description" content="Найдётся всё"/><meta property="og:url" content="https://ya.ru"/><meta property="og:type" content="website"/><meta property="og:site_name" content="Яндекс"/><meta property="og:locale" content="ru_RU"/><meta property="description" content="Найдётся всё"/><meta property="og:image" content="https://yastatic.net/s3/home-static/_/nova/4821e9d5.png"/><meta property="og:locale:alternate" content="be_BY"/><meta property="og:locale:alternate" content="kk_KZ"/><meta property="og:locale:alternate" content="tt_RU"/><meta property="og:locale:alternate" content="uk_UA"/><meta property="og:locale:alternate" content="en_US"/><meta property="og:locale:alternate" content="uz_UZ"/><meta property="og:locale:alternate" content="en_US"/><script>(function(){(function(r,s){if(r.Ya=r.Ya||{},Ya.Rum)throw new Error("Rum: interface is already defined");var a=r.performance,o=a&&a.timing&&a.timing.navigationStart||Ya.startPageLoad||+new Date,i=r.requestAnimationFrame,e=Ya.Rum={enabled:!!a,vsStart:document.visibilityState,vsChanged:!1,_defTimes:[],_defRes:[],_deltaMarks:{},_markListeners:{},_onComplete:[],_onInit:[],_unsubscribers:[],_settings:{},_vars:{},init:function(t,n){e._settings=t,e._vars=n},getTime:a&&a.now?function(){return a.now()}:Date.now?function(){return Date.now()-o}:function(){return new Date-o},time:function(t){e._deltaMarks[t]=[e.getTime()]},timeEnd:function(t,n){va
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Cyta</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />	
+<style>
+body {
+    font-family: Arial, sans-serif;
+    font-size: 22px;
+    background-color: #efefef;
+	 color: #333;
+    background-image: none;
+    height: 100%;
+	line-height: 30px;
+	padding: 80px 0;
+}
+a {
+    color: #357729;
+    text-decoration: underline;
+}
+a:hover {
+    color: #666;
+    text-decoration: underline;
+}
+.table{
+	background-color: #fff;
+	border-radius: 8px;
+	box-shadow: 0 2px 8px 0 rgb(0 0 0 / 16%);
+	padding: 50px;
+	width: 96%;
+	max-width: 850px;
+}	
+</style>
+</head>
+
+<body>
+
+<p style="text-align: center;"><img src="cyta-logo.png" alt="Cyta"/></p>
+<table class="table" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tbody>
+    <tr>
+      <td align="center"><span style="padding: 40px 0;"><img src="cancel-mid.jpg" width="100" height="100" alt=""/></span><br>
+      <p>This site can’t be reached due tο compliance with the Council Regulation (EU) 350/2022 and with EU and National Laws, only for as long as necessary.</p></td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>
+
 fragment0
-dsfsdfT / HTTP/1.0
-hoSt:ya.ru
+T / HTTP/1.0
+hoSt:lenta.ru
 Connection: close
 
 
 fragment1
-dsfsdf/ HTTP/1.0
-hoSt:ya.ru
+/ HTTP/1.0
+hoSt:lenta.ru
 Connection: close
 
 
 fragment2
-dsfsdfHTTP/1.0
-hoSt:ya.ru
+HTTP/1.0
+hoSt:lenta.ru
 Connection: close
 
 
 fragment3
-dsfsdfTP/1.0
-hoSt:ya.ru
+TP/1.0
+hoSt:lenta.ru
 Connection: close
 
 
 fragment4
-dsfsdf/1.0
-hoSt:ya.ru
+/1.0
+hoSt:lenta.ru
 Connection: close
 
 
 fragment5
-dsfsdf.0
-hoSt:ya.ru
+.0
+hoSt:lenta.ru
 Connection: close
 
 
-HTTP/1.1 200 Ok
-Accept-CH: Sec-CH-UA-Platform-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA, Sec-CH-UA-Full-Version-List, Sec-CH-UA-WoW64, Sec-CH-UA-Arch, Sec-CH-UA-Bitness, Sec-CH-UA-Platform, Sec-CH-UA-Full-Version, Viewport-Width, DPR, Device-Memory, RTT, Downlink, ECT
-Cache-Control: no-cache,no-store,max-age=0,must-revalidate
-Content-Security-Policy: connect-src https://*.strm.yandex.net https://mc.yandex.com https://ya.ru https://mc.yandex.ru https://*.mc.yandex.ru https://adstat.yandex.ru https://mc.admetrica.ru http://yabs.yandex.ru;img-src https://*.verify.yandex.ru https://*.ya.ru https://*.yandex.ru https://ya.ru https://yabs.yandex.by https://yabs.yandex.kz https://yabs.yandex.ru https://yabs.yandex.uz https://yandex.ru 'self' https://yastatic.net data: https://mc.admetrica.ru https://mc.yandex.com https://*.mc.yandex.ru https://adstat.yandex.ru https://mc.yandex.ru https://favicon.yandex.net https://avatars.mds.yandex.net blob:;frame-src https://*.ya.ru https://*.yandex.ru https://ya.ru https://yandex.ru https://mc.yandex.ru https://mc.yandex.md https://*.ya.ru https://*.yandex.ru https://ya.ru https://yandex.ru;style-src 'unsafe-inline' https://yastatic.net;report-u
-заголовок hoSt вместо Host
-необычный порядок заголовков
-21 КБ данных перед Host
-табуляция в конце домена
-фрагментирование заголовка
-фрагментирование заголовка, hoSt и отсутствие пробела одновременно
-дополнительный пробел после GET
-заголовок hOSt вместо Host
-значение Host БОЛЬШИМИ БУКВАМИ
-перенос строки в заголовках в UNIX-стиле
-7 КБ данных перед Host
-15 КБ данных перед Host
-отсутствие пробела между двоеточием и значением заголовка Host
+fragmented header
+ Hostname with uppercase
+extra line break after GET
+ hOSt instead Host
+dot after hostname
+ hoSt instead Host
