@@ -1,0 +1,248 @@
+\documentclass[12pt,aspectratio=169,hyperref={pdftex,unicode},xcolor=dvipsnames]{beamer}
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage{cmap}
+\usepackage{paratype}
+\usepackage{minted}
+\usepackage{blkarray} % for examples with code (require parameter -shell-escape)
+
+\usetheme{metropolis}
+\usefonttheme[]{professionalfonts}  % prohibit overwriting fonts to beamer
+\metroset{numbering=fraction}
+\metroset{subsectionpage=progressbar}
+
+\setbeamercolor{frametitle}{fg=black}
+\setbeamertemplate{frametitle}
+{
+    \vspace{3mm}\insertframetitle\par
+}
+\setbeamertemplate{title separator}{}
+\setbeamertemplate{footnote separator}{}
+
+\logo{\vspace{-1.2cm}\includegraphics[width=8mm]{./common/nup-icon.png}\hspace*{1.08\textwidth}}
+
+\institute
+{
+    \begin{columns}
+        \begin{column}{2.5cm}
+            \includegraphics[height=30mm,keepaspectraticommon/nup-icon.png]
+        \end{column}
+        \begin{column}{3cm}
+            Neapolis University Paphos
+        \end{column}
+    \end{columns}
+}
+
+\begin{document}
+
+  \begin{frame}[plain]
+        \begin{left}
+
+        {\Large\textbf{Content blocking systems in Cyprus}}
+
+            \vspace{5mm}
+            \textbf{Dmitrii Stepul}
+
+            {\small Supervisors: I. Agarkov, L. Zacharioudakis}
+
+            \vspace{10mm}
+            16.03.2024
+        \end{left}
+
+        \vspace{10mm}
+
+        \begin{column}{1cm}
+            \includegraphics[height=14mm,keepaspectratio]{./common/nup-logo.png}
+        \end{column}
+    \end{frame}
+
+
+    
+\begin{frame}
+    \frametitle{What is the entire project about?}
+    \begin{figure}
+    \centering
+    \begin{center}
+        \includegraphics[height=50mm,keepaspectratio]{images/Cyta_blockpage.png}
+    \end{center}
+    \caption{Blocking vk.com from the outside when using Cyta sim cards}
+    \end{figure}
+\end{frame}
+
+
+
+\begin{frame}
+    \frametitle{What is the entire project about?}
+    
+          \begin{figure}
+    \begin{center}
+            \centering\includegraphics[height=50mm,keepaspectratio]{images/rostelecom.png}
+    \end{center}
+    \caption{Blocking non-Russian IP addresses on the Russian side}
+    \label{fig:russian_blockage}
+    \end{figure}
+\end{frame}
+
+  \begin{frame}
+        \frametitle{Novelty}
+        There is no ISPs censorship checker for Cyprus.
+        \begin{itemize}
+            \item Some tools are outdated\footnote{https://github.com/ValdikSS/blockcheck} 
+            \item Сurrent research in Cyprus is more related to the legal side of censorship, rather than technical implementation\footnote{Internet Censorship Capabilities in Cyprus: An Investigation of Online Gambling Blocklisting}
+            \item Popular open-source tools aren't working in Cyprus \footnote{https://github.com/ValdikSS/GoodbyeDPI}
+        \end{itemize}
+
+
+    \end{frame}
+
+
+    \begin{frame}{Why is it popular}
+        \begin{figure}
+            \centering
+            \includegraphics[width=0.5\linewidth]{images/ratings.png}
+            \caption{Number of entries per blocklist and blocklist type: (C) copyright, (G) gambling, (M) health/medical,
+(IP) IP address based, (P) phishing, (T) tobacco. }
+            \label{fig:rating}
+        \end{figure}
+    \end{frame}
+
+
+
+    \begin{frame}
+        \frametitle{The Problem Statement}
+         \begin{enumerate}
+            \item To investigate the current methods of blocking content in Internet in Cyprus
+            \item  To compare results of blocking with differnet  Cypriot ISPs (like Primetel, Cyta,etc) \footnote{It will be an independent research without cooperation with ISPs}
+            \item Code the checker for ISPs and other people
+        \end{enumerate}
+
+
+
+     
+
+    \end{frame}
+
+    
+      \begin{frame}{Deep Packet Inspection}
+       State: We are sending GET request to vk.com\footnote{Russian social network which is blocked in EU}  through the Cyta network \\ 
+      There are two types of Deep Packet Inspection (DPI): 
+        \begin{itemize}
+            \item Lazy DPI
+            \item Smart DPI
+        \end{itemize}
+        
+            
+        \end{frame}
+
+
+
+    
+\begin{frame}[fragile] % необходимо использовать опцию fragile, чтобы TeX не обрабатывал специальные символы
+    \frametitle{Trying to bypass DPI using RFC standards}
+    \begin{verbatim}
+GET / HTTP/1.0
+Host: vk.com
+Accept-Encoding: gzip, deflate, br
+Connection: close
+    \end{verbatim}
+     \begin{quote}
+        3.2.  Header Fields
+
+        Each header field consists of a case-insensitive field name followed
+        by a colon (":"), optional leading whitespace, the field value, and
+        optional trailing whitespace.
+    \end{quote}
+    \vfill
+    \tiny{Source: RFC 7230 \textit{HTTP/1.0 Message Syntax and Routing}, June 2014}
+\end{frame}
+    
+
+    
+\begin{frame}[fragile] % необходимо использовать опцию fragile, чтобы TeX не обрабатывал специальные символы
+    \frametitle{Trying to bypass DPI using RFC standards}
+    \begin{verbatim}
+GET / HTTP/1.0
+Host: vk.com
+Accept-Encoding: gzip, deflate, br
+Connection: close
+    \end{verbatim}
+    \begin{itemize}
+        \item Host -> hOst or hOSt
+        \item Add spaces and tabulation
+        \item Split one packet into two and send it fragmented
+        \item Add paddings
+    \end{itemize}
+\end{frame}
+
+
+
+\begin{frame}[fragile]
+    \frametitle{Trying to bypass DPI using RFC standards}
+
+    
+    \begin{center}
+
+        \begin{itemize}
+        \item \textbf{This site can’t be reached due tο compliance with the Council Regulation (EU) 350/2022 and with EU and National Laws, only for as long as necess}\\ 
+    \item  \textbf{Your browser sent a request that this server could not understand.}
+       \end{itemize}
+    \end{center}
+\end{frame}
+
+
+\begin{frame}{SNI-blocking}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.5\linewidth]{images/sni_blocking_example.png}
+        \caption{TLS scheme \footnote{Service-Level Monitoring of HTTPS Traffic, DOI: 10.13140/RG.2.2.32296.67849}}
+        \label{fig:enter-label}
+    \end{figure}
+\end{frame}
+
+
+\begin{frame}[fragile]
+    \frametitle{IP-blocking on Russian websites}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.75\linewidth]{images/у русских блокировки.png}
+    \caption{Traceroute to vk.com via Cyta}
+    \label{fig:enter-label}
+\end{figure}
+    \end{frame}
+
+
+
+    \begin{frame}[fragile]
+    \frametitle{IP-blocking on Russian websites}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.75\linewidth]{images/traceroute_to_vk_via_CYTA.png}
+        \caption{Traceroute to rt.ru via Cyta}
+        \label{fig:enter-label}
+    \end{figure}
+    \end{frame}
+
+
+    
+
+        
+    
+  \begin{frame}
+        \frametitle{Plans}
+
+        \begin{enumerate}
+            \item Nicely organize the results into tabular\graphs 
+            \item Try to bypass TLS interception\ SNI-blocking
+        \end{enumerate}
+
+        \vspace{5mm}\hrule\vspace{5mm}
+
+        \begin{center}
+         Dmitrii Stepul, +35797804220, \\ d.stepul@nup.ac.cy
+        \end{center}
+
+    \end{frame}
+  
+
+\end{document}
