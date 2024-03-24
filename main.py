@@ -2,7 +2,8 @@ import argparse
 import os
 import socket
 import ssl
-import http.client
+
+from blocking_methods.http_bypassing import test_http_or_https
 
 
 class BlockingStrategy:
@@ -50,12 +51,16 @@ class DNSBlocking(BlockingStrategy):
 
 
 class HTTPBlocking(BlockingStrategy):
-    def check_blocking(self, target, unrelated):
-        pass
+    def check_blocking(self, website, port):
+        test_http_or_https(site=website)
 
 
 class CensorshipChecker:
     def __init__(self):
+        self.port = None
+        self.method = None
+        self.file = None
+        self.site = None
         self.parser = argparse.ArgumentParser(
             prog="cypriot censorship cheker",
             description="What the program does",
@@ -63,17 +68,17 @@ class CensorshipChecker:
         )
 
         self.parser.add_argument(
-            "-s", "--site", type=str, help="Website domain to check"
+            "-s", "--site",  type=str, help="Website domain to check"
         )
         self.parser.add_argument(
-            "-p", "--port", type=int, help="Port to use for the check"
+            "-p", "--port", type=int, default=80, help="Port to use for the check"
         )
         self.parser.add_argument(
-            "-f", "--file", type=str, help="File with a list of websites to check"
+            "-f", "--file", type=str, default=None, help="File with a list of websites to check"
         )
         self.parser.add_argument(
-            "-b",
-            "--block",
+            "-m",
+            "--method",
             type=str,
             choices=["sni_blocking", "dns", "http"],
             help="Type of blocking to bypass",
@@ -84,8 +89,10 @@ class CensorshipChecker:
     def check_args(self):
         if self.args.site:
             self.site = self.args.site
+        elif self.args.file and os.path.isfile(self.args.file):
+            self.file = self.args.file
         else:
-            print("Error: No website domain provided.")
+            print("Error: Either a website domain or a file with a list of websites must be provided.")
             exit(1)
 
         if self.args.port and isinstance(self.args.port, int):
@@ -94,26 +101,22 @@ class CensorshipChecker:
             print("Error: Invalid or no port provided.")
             exit(1)
 
-        if self.args.file and os.path.isfile(self.args.file):
-            self.file = self.args.file
-        else:
-            print("Error: Invalid file or file does not exist.")
-            exit(1)
-
-        if self.args.block:
-            self.block = self.args.block
+        if self.args.method:
+            self.method = self.args.method
         else:
             print("Error: No blocking type provided.")
             exit(1)
 
     def run(self):
-        if self.block == "sni_blocking":
+        strategy = BlockingStrategy()
+        if self.method == "sni_blocking":
             strategy = SNIBlocking()
-        elif self.block == "dns":
+        elif self.method == "dns":
             strategy = DNSBlocking()
-        else:
+        elif self.method == "http":
             strategy = HTTPBlocking()
-
+        else:
+            print("Error: Invalid")
         if self.file:
             with open(self.file, "r") as file:
                 for line in file:
@@ -121,11 +124,6 @@ class CensorshipChecker:
                     strategy.check_blocking(target, unrelated)
         else:
             strategy.check_blocking(self.site, self.port)
-
-
-checker = CensorshipChecker()
-checker.check_args()
-checker.run()
 
 
 if __name__ == "__main__":
