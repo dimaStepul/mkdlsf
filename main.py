@@ -2,6 +2,7 @@ import argparse
 import os
 import socket
 import ssl
+from urllib.parse import urlparse
 
 from blocking_methods.http_bypassing import test_http_or_https
 
@@ -55,7 +56,17 @@ class HTTPBlocking(BlockingStrategy):
         test_http_or_https(site=website)
 
 
+def extract_domain(url: str):
+    if url.startswith("https://") or url.startswith("http://"):
+        parsed_url = urlparse(url)
+        domain = parsed_url.netloc
+        return domain
+    else:
+        return url
+
+
 class CensorshipChecker:
+
     def __init__(self):
         self.port = None
         self.method = None
@@ -88,7 +99,8 @@ class CensorshipChecker:
 
     def check_args(self):
         if self.args.site:
-            self.site = self.args.site
+            self.site = extract_domain(self.args.site)
+
         elif self.args.file and os.path.isfile(self.args.file):
             self.file = self.args.file
         else:

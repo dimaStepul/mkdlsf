@@ -170,7 +170,7 @@ def test_dpi(site, port, html_file=html_file_with_results,
         else:
             if result.split("\n")[0].find("200 ") != -1:
                 print("😘 open successfully")
-                results.append(test_name)
+                results.append((test_name,result))
             else:
                 print("😒 can't open")
     return list(set(results))
@@ -185,8 +185,12 @@ def trucate_https(domain):
     return domain
 
 
-def get_redirection(url):
-    response = requests.get(f"http://{url}", allow_redirects=False)
+def get_redirection(url, timeout=3):
+    try:
+            response = requests.get(f"http://{url}", allow_redirects=False)
+    except requests.exceptions.ConnectTimeout:
+            print("Connection timed out while trying to reach the server.")
+            return None, False
     max_redirects = 10
     num_redirects = 0
     redirect_url = f"http://{url}"
@@ -200,7 +204,14 @@ def get_redirection(url):
         if redirect_url.find("https") != -1:
             is_https = True
         print(f"Redirecting to: {redirect_url}")
-        response = requests.get(redirect_url, allow_redirects=False)
+        try:
+            response = requests.get(redirect_url, allow_redirects=False, timeout=timeout)
+        except requests.exceptions.ConnectTimeout:
+            print("Connection timed out while trying to reach the server.")
+            return None, False
+        except requests.exceptions.RequestException as e:
+            print(f"An error occurred: {e}")
+            return None, False
         num_redirects += 1
     redirect_url = trucate_https(redirect_url)
     print(redirect_url)
@@ -213,12 +224,12 @@ def test_http_or_https(site):
         port = 443
     else:
         port = 80
-    test_dpi(site, port=port, is_https=is_https_required)
+    return test_dpi(site, port=port, is_https=is_https_required)
 
 
 def main():
-    site = "ria.ru"
-    test_http_or_https(site)
+    site = "vk.com"
+    # print("\n\n\n\n\n" + "" ,test_http_or_https(site))
 
 
 if __name__ == "__main__":
