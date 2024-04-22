@@ -16,3 +16,4 @@ rosguard.gov.ru
 mos.ru
 pochta.ru
 rt.ru
+nalog.ru
