@@ -228,7 +228,8 @@ def test_http_or_https(site):
 
 
 def main():
-    site = "vk.com"
+    site = "ria.ru"
+    test_http_or_https(site)
     # print("\n\n\n\n\n" + "" ,test_http_or_https(site))
 
 
