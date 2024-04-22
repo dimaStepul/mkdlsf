@@ -42,32 +42,32 @@ class SNIBlocking(BlockingStrategy):
             print(f"There is probably no SNI-based blocking on {target}")
 
 
-class HostHeaderBlocking(BlockingStrategy):
-    def check_blocking(self, target, unrelated):
-        unrelated_server = "example.com"
-
-        conn = http.client.HTTPConnection(unrelated_server)
-        conn.putrequest("GET", "/", headers={"Host": target})
-        try:
-            conn.getresponse()
-            target_blocked = False
-        except http.client.RemoteDisconnected:
-            target_blocked = True
-        conn.close()
-
-        conn = http.client.HTTPConnection(unrelated_server)
-        conn.putrequest("GET", "/", headers={"Host": unrelated})
-        try:
-            conn.getresponse()
-            unrelated_blocked = False
-        except http.client.RemoteDisconnected:
-            unrelated_blocked = True
-        conn.close()
-
-        if target_blocked and not unrelated_blocked:
-            print(f"There is probably Host-header-based blocking on {target}")
-        else:
-            print(f"There is probably no Host-header-based blocking on {target}")
+# class HostHeaderBlocking(BlockingStrategy):
+#     def check_blocking(self, target, unrelated):
+#         unrelated_server = "example.com"
+#
+#         conn = http.client.HTTPConnection(unrelated_server)
+#         conn.putrequest("GET", "/", headers={"Host": target})
+#         try:
+#             conn.getresponse()
+#             target_blocked = False
+#         except http.client.RemoteDisconnected:
+#             target_blocked = True
+#         conn.close()
+#
+#         conn = http.client.HTTPConnection(unrelated_server)
+#         conn.putrequest("GET", "/", headers={"Host": unrelated})
+#         try:
+#             conn.getresponse()
+#             unrelated_blocked = False
+#         except http.client.RemoteDisconnected:
+#             unrelated_blocked = True
+#         conn.close()
+#
+#         if target_blocked and not unrelated_blocked:
+#             print(f"There is probably Host-header-based blocking on {target}")
+#         else:
+#             print(f"There is probably no Host-header-based blocking on {target}")
 
 
 class Context:
@@ -82,11 +82,10 @@ class Context:
 
 
 def check_blocking_from_file(file_path, context: Context):
-    if os.path.isfile(file_path):
-        with open(file_path, "r") as file:
-            for line in file:
-                target, unrelated = line.strip().split(",")
-                context.check_blocking(target, unrelated)
+    with open(file_path, "r") as file:
+        websites = [line.strip() for line in file]
+    for site in websites:
+            context.check_blocking(site, "beb.com")
     else:
         print("Error: Invalid file or file does not exist.")
         exit(1)
@@ -97,8 +96,10 @@ def check_blocking_from_input(context: Context):
     unrelated = input("Enter unrelated website: ")
     context.check_blocking(target, unrelated)
 
+def test_sites_from_file(filename):
+    with open(filename, "r") as file:
+        websites = [line.strip() for line in file]
+
 
 context = Context(SNIBlocking())
-check_blocking_from_file("websites.txt", context)
-context.set_strategy(HostHeaderBlocking())
-check_blocking_from_input(context)
+context.check_blocking("vk.com", "example.com")
