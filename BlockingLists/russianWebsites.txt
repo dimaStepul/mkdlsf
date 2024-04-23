@@ -17,3 +17,5 @@ mos.ru
 pochta.ru
 rt.ru
 nalog.ru
+aeroflot.ru
+voskhod.ru
