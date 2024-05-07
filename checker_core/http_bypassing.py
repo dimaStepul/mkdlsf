@@ -42,7 +42,7 @@ def send_request(
         recvdata = sock.recv(8192)
         recv = recvdata
         recv_decoded = recv.decode()
-        print(recv_decoded)
+        # print(recv_decoded)
         write_to_file(logs_file, recv_decoded)
         write_to_file(html_file, recv_decoded)
         write_to_file(txt_file, recv_decoded)
@@ -55,7 +55,7 @@ def send_request(
         except  Exception:
             print("Exception occurred")
         sock.close()
-    return _decode_bytes(recv)
+    return recv_decoded
 
 
 def configure_request_body(host, urn="/"):
@@ -228,7 +228,7 @@ def test_http_or_https(site):
 
 
 def main():
-    site = "ria.ru"
+    site = "vk.com"
     test_http_or_https(site)
     # print("\n\n\n\n\n" + "" ,test_http_or_https(site))
 

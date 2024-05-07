@@ -4,7 +4,7 @@ import socket
 import ssl
 from urllib.parse import urlparse
 
-from blocking_methods.http_bypassing import test_http_or_https
+from checker_core.http_bypassing import test_http_or_https
 
 
 class BlockingStrategy:
